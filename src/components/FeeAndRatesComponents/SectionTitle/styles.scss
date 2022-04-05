@@ -1,0 +1,28 @@
+.section-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #767676;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: GothamRounded;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 1025px) {
+  .container {
+    .section-title {
+      margin: 20px 0 0 0;
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    .section-title {
+      margin: 0;
+    }
+  }
+}

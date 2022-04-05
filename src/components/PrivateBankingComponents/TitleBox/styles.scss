@@ -1,0 +1,52 @@
+// .section-private-banking-title-box
+.section-private-banking-title-box {
+    padding: 72px 0;
+    .container {
+        padding: 0 163px 0 162px;
+    }
+    .title-txt {
+        h1 {
+            color: #001F26;
+            font-family: GothamRounded;
+            font-size: 48px;
+            line-height: 60px;
+            font-weight: 400;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+    .section-private-banking-title-box {
+        padding: 0 0 30px;
+        .container {
+            padding: 0 58px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-private-banking-title-box {
+        padding: 0 0 30px;
+        .container {
+            padding: 0 32px;
+        }
+        .title-txt {
+            h1 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-private-banking-title-box {
+        padding: 0 24px 60px;
+        .container {
+            padding: 0;
+        }
+    }
+}

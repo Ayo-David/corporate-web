@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="310px" viewBox="0 0 375 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M523,0 L523,313 L449,313 L449,309.091688 C387.218391,293.215173 325.436782,285.185672 263.655172,285.003183 L261.5,285 C199,285 136.5,293.030563 74,309.091688 L74,309.091688 L74,313 L0,313 L0,0 L523,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="111A---Home-" transform="translate(0.000000, -122.000000)">
+            <g id="Group-13" transform="translate(-74.000000, 122.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

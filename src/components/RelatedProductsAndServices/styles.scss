@@ -1,0 +1,151 @@
+// .section-faq-individual-related-products-and-services
+.section-faq-individual-related-products-and-services {
+	margin: 0 146px 144px;
+    .title {
+       	font-family: "GothamRounded";
+		color: #767676;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+    }
+    .flex-space {
+    	display: flex;
+    	justify-content: center;
+    }
+    .service-item {
+    	flex-wrap: wrap;
+    }
+    .item {
+    	width: 25%;
+    	.item-body {
+    		margin: 0 16px 32px;
+    		height: 121px;
+			box-shadow: 0 5px 12px rgba(0, 107, 146, 0.12);
+			border-radius: 10px;
+			background-color: #ffffff;
+			display: flex;
+			align-items: center;
+			padding-left: 25px;
+			overflow: hidden;
+    	}
+		
+		.icon {
+			width: 33px;
+			height: 33px;
+			margin-right: 22px;
+			img {
+				width: auto;
+				height:  auto;
+			}
+		}
+		.name {
+			color: #001f26;
+			font-family: "GothamRounded";
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 24px;
+			padding-right: 25px;
+		}
+  }
+}
+
+/* fix layout issue when smaller than 1440px width */
+@media (max-width: 1440px) {
+	.section-faq-individual-related-products-and-services {
+		.container {
+			padding: 0;
+		}
+	}
+}
+/* fix layout issue when smaller than 1370px width */
+@media (max-width: 1370px) {
+    .section-faq-individual-related-products-and-services {
+        margin: 0 60px 44px;
+        .item {
+	    	.item-body {
+	    		margin: 0 10px 32px;   		
+				padding-left: 20px;
+	    	}
+			.icon {
+				width: 33px;
+				height: 33px;
+				margin-right: 15px;
+			}
+			.name {
+				font-size: 16px;
+			}
+    	}
+    }
+}
+@media (max-width: 1023px) {
+    .section-faq-individual-related-products-and-services {
+        margin: 0 10px 30px;
+        .container {
+            padding: 0 2px;
+        }
+    	.title {
+			font-size: 14px;
+	    }
+	    .item {
+	    	.item-body {
+	    		margin: 0 11.5px 32px;
+	    		height: 147px;
+				display: block;
+				padding: 16px;
+	    	}
+		
+		.icon {
+			width: 30px;
+			height: 33px;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+		.name {
+			font-size: 14px;
+		}
+    }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-faq-individual-related-products-and-services {
+        margin: 0 15px 60px;
+    .title {
+		font-size: 14px;
+		margin-bottom: 30px;
+    }
+    .flex-space {
+    	display: block;
+    }
+    .item {
+    	width: 100%;
+    	.item-body {
+    		margin: 0 0 20px;
+    		height: 58px;
+			display: flex;
+			align-items: center;
+			padding-left: 15px;
+    	}
+		
+		.icon {
+			width: 26px;
+			height: 34px;
+			margin-right: 15px;
+			margin-bottom: 0;
+			img {
+				width: auto;
+				height:  auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		.name {
+			font-size: 16px;
+			line-height: 24px;
+		}
+    }
+    }
+}

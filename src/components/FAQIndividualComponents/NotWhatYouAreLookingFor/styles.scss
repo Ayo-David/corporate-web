@@ -1,0 +1,96 @@
+// .section-faq-individual-not-what-you-are-looking-for
+.section-faq-individual-not-what-you-are-looking-for {
+	margin: 0 305px 72px;
+    .title {
+    	margin-bottom: 36px;
+		color: #767676;
+		font-family: "GothamRounded";
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		text-transform: uppercase;
+    }
+    .search-box {
+		height: 98px;
+		border-radius: 4px;
+		border: 1px solid #003d4c;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 31px 28px;
+		.btn-search {
+			width: 34px;
+			height: 35px;
+			display: block;
+			background: url("/assets/search.png") no-repeat;
+			background-size: 100%;
+			margin-right: 28px;
+		}
+		.inputs {
+			flex: 1;
+			height: 48px;
+			input {
+				line-height: 48px;
+				color: #003d4c;
+				font-family: "GothamRounded";
+				font-size: 36px;
+				font-weight: 300;
+				border: none 0;
+				outline: none 0;
+			}
+			input::-webkit-input-placeholder {        
+     			color: #003d4c;
+    		}
+		}
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1350px) {
+	.section-faq-individual-not-what-you-are-looking-for {
+        margin: 0 100px 72px;
+    }
+}
+@media (max-width: 1023px) {
+    .section-faq-individual-not-what-you-are-looking-for {
+        margin: 0 42px 60px;
+	    .title {
+			font-size: 14px;
+	    }
+	    .search-box {
+			height: 56px;
+			border: 1px solid #001f26;
+			padding: 15px 30px;
+			.btn-search {
+				width: 19px;
+				height: 19px;
+				margin-right: 20px;
+			}
+			.inputs {
+				height: 26px;
+				input {
+					line-height: 26px;
+					font-size: 18px;
+				}
+			}
+	    }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-faq-individual-not-what-you-are-looking-for {
+         margin: 0 15px 60px;
+	    .title {
+			margin-bottom: 27px;
+	    }
+	    .search-box {
+			border-radius: 6px;
+			border: 2px solid #001f26;
+			.btn-search {
+				margin-right: 24px;
+			}
+	    }
+    }
+}

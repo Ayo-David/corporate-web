@@ -1,0 +1,23 @@
+.container {
+  &.container-page-with-sidebar {
+    display: flex;
+    padding: 0 140px 95px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    &.container-page-with-sidebar {
+      flex-direction: column-reverse;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    &.container-page-with-sidebar {
+      padding: 0 30px;
+    }
+  }
+}

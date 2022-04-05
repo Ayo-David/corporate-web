@@ -1,0 +1,230 @@
+// .section-select-rates
+.section-select-rates {
+  padding: 30px 0 30px;
+  .gray-title {
+    color: #767676;
+    font-family: GothamRounded;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    &.center {
+      text-align: center;
+    }
+  }
+  .txt {
+    color: #001f26;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 41px;
+  }
+  .select-rates {
+    padding: 0;
+  }
+  .blue-search {
+    margin-top: 30px;
+    justify-content: center;
+    padding: 35px 50px;
+    background-color: #001f26;
+    border-radius: 20px;
+    box-shadow: 0 10px 16px 0 #c5c5c5;
+    .lefts {
+      flex: 1;
+      .white-txt {
+        color: #ffffff;
+        font-family: GothamRounded;
+        font-size: 32px;
+        line-height: 51px;
+        margin-right: 15px;
+      }
+      .green-drop {
+        border-bottom: 1px solid #00d1b6;
+        color: #00d1b6;
+        font-family: GothamRounded;
+        font-size: 32px;
+        line-height: 51px;
+        flex: 1;
+        .dropdown-toggle:not(:disabled):not(.disabled):active,
+        .dropdown-toggle:not(:disabled):not(.disabled).active,
+        .show > .dropdown-toggle.dropdown-toggle {
+          background-color: transparent;
+          border-color: transparent;
+        }
+
+        .dropdown-toggle:not(:disabled):not(.disabled):active:focus,
+        .dropdown-toggle:not(:disabled):not(.disabled).active:focus,
+        .show > .dropdown-toggle.dropdown-toggle:focus {
+          box-shadow: none;
+        }
+
+        //.dropdown
+        .dropdown {
+          display: block;
+          .btn.dropdown-toggle {
+            color: #00d1b6;
+            font-family: 'GothamRounded';
+            font-size: 32px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 51px;
+            border-radius: 3px;
+            background-color: transparent;
+            padding-right: 50px;
+            width: 100%;
+            text-align: left;
+            padding-left: 0;
+            position: relative;
+            display: block;
+            &::after {
+              background: url(/assets/chevron_right@2x.png) center center
+                no-repeat;
+              background-size: 20px 13px;
+              display: block;
+              width: 50px;
+              height: 50px;
+              content: '';
+              border: 0;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              margin-top: -15px;
+            }
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+          &.error {
+            .btn.btn-outline-primary {
+              border-color: #fff000;
+            }
+          }
+          .dropdown-menu.show {
+            margin-top: 1px;
+            width: 100%;
+            min-width: 100%;
+            box-shadow: 0 5px 12px 0 rgba(0, 107, 146, 0.24);
+            border-radius: 10px;
+            border: 0;
+            &:focus {
+              outline: none;
+            }
+            .dropdown-item {
+              font-size: 20px;
+              padding-right: 16px;
+              padding-left: 16px;
+              white-space: normal;
+              font-weight: 600;
+              &:hover,
+              &:focus {
+                outline: none;
+              }
+              &:active {
+                background-color: #f3f3f3;
+                color: #5a5a5a;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rights {
+      margin-left: 30px;
+      .btn-green {
+        height: 48px;
+        line-height: 46px;
+        border-radius: 24px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  // .section-select-rates
+  .section-select-rates {
+    padding: 18px 0;
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  // .section-select-rates
+  .section-select-rates {
+    .select-rates {
+      padding: 0;
+    }
+    .blue-search {
+      padding: 32px;
+      .lefts {
+        .white-txt {
+          font-size: 20px;
+          margin-right: 24px;
+        }
+        .green-drop {
+          .dropdown {
+            .btn.dropdown-toggle {
+              font-size: 20px;
+              line-height: 37px;
+              &::after {
+                width: 30px;
+                height: 30px;
+                background-size: 11px 7px;
+              }
+            }
+          }
+        }
+      }
+      .rights {
+        margin-left: 24px;
+      }
+    }
+    .gray-title {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .txt {
+      line-height: 28px;
+      font-size: 14px;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-select-rates {
+    padding: 0;
+    .blue-search {
+      padding: 14px 0 25px;
+      flex-direction: column;
+      .lefts {
+        flex: 1;
+        flex-direction: column;
+        margin-bottom: 20px;
+        .white-txt {
+          margin-right: 0;
+        }
+        .green-drop {
+          width: 315px;
+          margin: 0 auto;
+          .dropdown {
+            .btn.dropdown-toggle {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .rights {
+        margin-left: 0;
+        text-align: center;
+        .btn-green {
+          min-width: 315px;
+        }
+      }
+    }
+    .txt {
+      font-size: 16px;
+    }
+  }
+}

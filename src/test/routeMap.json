@@ -1,0 +1,358 @@
+{
+  "getHomeContentData": {
+    "route": "/",
+    "id": "a2d12474-f579-46aa-8b9d-3b2701ba3357",
+    "title": "Business Home Page"
+  },
+  "getHomeBannerData": {
+    "route": "/",
+    "id": "caf53805-9c1e-4ac5-82c0-63775139de7a"
+  },
+  "getHomeFieldQuickLinksData": {
+    "route": "/"
+  },
+  "getHomeProductData": {
+    "route": "/",
+    "id": "33c94ed9-7b7b-4642-8fd2-169121ed8edd",
+    "title": "Property Finance"
+  },
+  "getHomeFinanceData": {
+    "route": "/",
+    "id": "33c94ed9-7b7b-4642-8fd2-169121ed8edd",
+    "title": "Property Finance"
+  },
+  "getHomeAdsAwarenessData": {
+    "route": "/",
+    "id": "a2183554-b4be-47ee-8b23-cd229b1c54f3",
+    "title": "Beware of Fraud Scams"
+  },
+  "getHomeOurCustomerPromisesData": {
+    "route": "/"
+  },
+  "getHomeTrustedProviderData": {
+    "route": "/"
+  },
+  "getNewsArticlesContentData": {
+    "route": "/about_us/news_and_articles"
+  },
+  "getNewsArticlesBannerData": {
+    "route": "/about_us/news_and_articles",
+    "id": "b4ddd6b6-f8a1-44dc-8363-0af9a0b990dd",
+    "title": "Odyssey Bank Implements nCino to Provide an Omnichannel and Agile Customer Experience"
+  },
+  "getNewsCategoriesData": {
+    "route": "/about_us/news_and_articles"
+  },
+  "getNewsArticlesListData": {
+    "route": "/about_us/news_and_articles"
+  },
+  "getBridgingFinanceContentData": {
+    "route": "/business-banking/business-finance",
+    "id": "764a6bb4-62a7-4d1b-8412-97c38a96fcbc",
+    "title": "Bridging Finance"
+  },
+  "getBridgingFinanceBannerData": {
+    "route": "/business-banking/business-finance",
+    "id": "9dc7bf25-a000-4221-8297-993b29260b55",
+    "title": "Bridging Finance"
+  },
+  "getBridgingFinanceLinkIconsData": {
+    "route": "/business-banking/business-finance"
+  },
+  "getMeetTheTeamContentData": {
+    "route": "/private_banking/meet_the_team",
+    "id": "1d1cf35d-4d4a-4f37-81c7-18e98cf18250",
+    "title": "Meet The Team - Private Banking"
+  },
+  "getMeetTheTeamBannerData": {
+    "route": "/private_banking/meet_the_team",
+    "id": "fcc6f857-e1f2-472e-8327-eae8494cab09",
+    "title": "Here to help you with your"
+  },
+  "getMeetTheTeamTeamsData": {
+    "route": "/private_banking/meet_the_team"
+  },
+  "getMeetTheTeamCustomerFeedbackData": {
+    "route": "/private_banking/meet_the_team"
+  },
+  "getPersonalSavingsOnlineISAContentData": {
+    "route": "/business/savings",
+    "id": "f7e04288-16c6-4334-86cf-102d319289dd",
+    "title": "Cash ISA"
+  },
+  "getPersonalSavingsOnlineISABannerData": {
+    "route": "/business/savings",
+    "id": "8518b5f0-6bec-4fcc-bc17-a1887dc4fe2a"
+  },
+  "getPersonalSavingsOnlineISALinkIconsData": {
+    "route": "/business/savings"
+  },
+  "getBusinessRelationshipManagerContentData": {
+    "route": "/business/relationship_finance",
+    "id": "53790fa2-1964-4eab-981a-7c2fa7c65ea9",
+    "title": "Meet the team - Business Banking"
+  },
+  "getBusinessRelationshipManagerBannerData": {
+    "route": "/business/relationship_finance",
+    "id": "aee1fe81-1e17-4ce4-ad28-6a45eaa07940"
+  },
+  "getBusinessRelationshipManagerTeamsData": {
+    "route": "/business/relationship_finance"
+  },
+  "getBusinessRelationshipManagerCustomerFeedbackData": {
+    "route": "/business/relationship_finance"
+  },
+  "getFAQIndividualContentData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getFAQIndividualFAQListData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getFAQIndividualRelatedFAQsData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getFAQIndividualRelatedItemsData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getBusinessCurrentAccountContentData": {
+    "route": "/business/current_accounts",
+    "id": "4ad01617-ac26-41b7-96a9-421c9f8bba8b",
+    "title": "Business Current Account"
+  },
+  "getPersonalCurrentAccountContentData": {
+    "route": "/business/current_accounts",
+    "id": "9dd0bd2c-df6c-43e2-a64d-be0c9d8792e4",
+    "title": "Personal Current Account"
+  },
+  "getBusinessCurrentAccountsContentData": {
+    "route": "/business/current_accounts",
+    "id": "256010fd-7bcb-4336-9622-9721064dce48",
+    "title": "Business Classic Current Accounts"
+  },
+  "getPersonalCurrentAccountsContentData": {
+    "route": "/business/current_accounts",
+    "id": "2274325f-0e1e-4f49-8bd4-51370cde58a8",
+    "title": "Personal Current Account"
+  },
+  "getPersonalCurrentAccountsEurosContentData": {
+    "route": "/business/current_accounts",
+    "id": "ccd5a1db-4f7b-4f4e-8c83-2592c1196ef0",
+    "title": "Personal Current Account in Euros"
+  },
+  "getCurrentAccountsBannerData": {
+    "route": "/business/current_accounts",
+    "id": "93d9ebd0-7094-4547-96ba-1fcd9bdd81a7"
+  },
+  "getCurrentAccountsHeaderLinksData": {
+    "route": "/business/current_accounts"
+  },
+  "getCurrentAccountsFieldComponentsData": {
+    "route": "/business/current_accounts"
+  },
+  "getImageEligibilityCriteria": {
+    "route": "/business-banking/business-finance",
+    "id": "e7df0f72-7b5c-4015-b03e-a03701798f12"
+  },
+  "getImageDescriptionWithFaq": {
+    "route": "/business-banking/business-finance",
+    "id": "52360da1-dac9-4ed5-9d7a-6c3016b6a4e5"
+  },
+  "getCurrentAccountsCustomerInterestLinksData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getCurrentAccountsFAQsData": {
+    "route": "/customer_suppor/online_security",
+    "id": "63013474-6f9b-4b9f-873d-c7e27ff5e4b3",
+    "title": "Business Current Account FAQ"
+  },
+  "getCurrentAccountsCorporateFAQData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getCurrentAccountsCardsWithLinkTextData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getCurrentAccountsTrustedProviderData": {
+    "route": "/customer_suppor/online_security",
+    "id": "5b59d22e-d577-44c2-897c-dfef268803c0",
+    "title": "A Trusted provider Since 1953"
+  },
+  "getCurrentAccountsTrustedProviderLogoData": {
+    "route": "/customer_suppor/online_security"
+  },
+  "getAboutUsContentData": {
+    "route": "/about-us/about-cynergy-bank",
+    "id": "21c4d958-3883-4365-a102-1f1f8b95c50c",
+    "title": "About Odyssey Bank"
+  },
+  "getAboutUsBannerData": {
+    "route": "/about-us/about-cynergy-bank",
+    "id": "45dad6f7-8f8e-423c-85ec-82c13d5511ea"
+  },
+  "getAboutUsFieldComponentsData": {
+    "route": "/about-us/about-cynergy-bank"
+  },
+  "getAboutUsEthicsValuesContentData": {
+    "route": "/about-cynergy-bank/ethics-values",
+    "id": "34cec886-b2bf-4d21-aa85-d5298ada0a5b",
+    "title": "Ethics & Values"
+  },
+  "getImage3": {
+    "route": "getImage3",
+    "id": "39ffa792-b605-4888-97ff-14f9d2d5a937"
+  },
+  "getImageWithLongText": {
+    "route": "getImage3",
+    "id": "93ca9ee4-8c0d-4296-82fd-3be86271e599"
+  },
+  "getImageVideo": {
+    "route": "getImage3",
+    "id": "1506401c-ad46-4c8c-8602-d4bcb8ae9e70"
+  },
+  "getAboutUsFaqsData": {
+    "route": "getAboutUsFaqsData",
+    "id": "63013474-6f9b-4b9f-873d-c7e27ff5e4b3",
+    "title": "Business Current Account FAQ"
+  },
+  "getError404ContentData": {
+    "route": "/error404",
+    "id": "442b2844-f47a-44d3-878f-4af457e164e5",
+    "title": "404 Error"
+  },
+  "getMortgageCalculatorContentData": {
+    "route": "/private_banking/borrowing/mortgage",
+    "id": "4e498568-d6e3-41f9-a0ac-a21a3d76d2f5",
+    "title": "MORTGAGE CALCULATOR"
+  },
+  "getThanksNoteData": {
+    "route": "/private_banking/borrowing/mortgage/step2",
+    "id": "a05a5d29-9b17-47ed-b06f-b1a5e88241f5",
+    "title": "Contact us"
+  },
+  "getCustomerSupportFAQsContentData": {
+    "route": "/customer_suppor/faqs",
+    "id": "c2576f22-075d-4cee-8e28-8922a9927789",
+    "title": "ODYSSEY BANK CUSTOMER SUPPORT"
+  },
+  "getCustomerSupportFAQsSetData": {
+    "route": "/customer_suppor/faqs"
+  },
+  "getCustomerSupportFAQsAdsAwarenessData": {
+    "route": "/customer_suppor/faqs"
+  },
+  "getCustomerSupportFAQsServiceStatusData": {
+    "route": "/customer_suppor/faqs",
+    "id": "b7c484c2-6f11-49c4-8df2-aac7bafc59da"
+  },
+  "getCustomerSupportFAQsFieldServiceStatusData": {
+    "route": "/customer_suppor/faqs"
+  },
+  "getCustomerSupportFAQsWaysToContactUsData": {
+    "route": "/customer_suppor/faqs"
+  },
+  "getCustomerSupportFAQsMapImageData": {
+    "route": "/customer_suppor/faqs",
+    "id": "6a10dfe9-15a6-4bd8-87f7-c81524caf491"
+  },
+  "getCustomerSupportFAQsSocialMediaData": {
+    "route": "/customer_suppor/faqs",
+    "id": "975efb51-ba20-46ca-928e-6064077b025c"
+  },
+  "getCustomerSupportFAQsData": {
+    "route": "/customer_suppor/faqs"
+  },
+  "getCustomerSupportFAQsFieldFAQSetData": {
+    "route": "/customer_suppor/faqs"
+  },
+  "getPrivateBankingContentData": {
+    "route": "/private_banking/current_account",
+    "id": "2eecd37e-e6f5-4a6b-a1c1-2e7f11607599",
+    "title": "Private Banking Landing"
+  },
+  "getPrivateBankingBannerData": {
+    "route": "/private_banking/current_account",
+    "id": "92ddae54-0442-43b1-8987-52117c42fb00"
+  },
+  "getFeeAndRatesContentData": {
+    "route": "/customer_support/fees_and_rates",
+    "id": "42cf9dba-74f1-438e-9b41-6eeeeba99c78",
+    "title": "Rates"
+  },
+  "getFeeAndRatesBannerData": {
+    "route": "/customer_support/fees_and_rates",
+    "id": "60f105e2-34ca-42ee-8456-e3e332db9a24"
+  },
+  "getFeeAndRateRateDetailsData": {
+    "route": "/customer_support/fees_and_rates"
+  },
+  "getFeeAndRateForeignExchangeDetailsData": {
+    "route": "/customer_support/fees_and_rates"
+  },
+  "getFeeAndRatesDropdownData": {
+    "route": "/customer_support/fees_and_rates"
+  },
+  "getFeeAndRatesRatesTemplateData": {
+    "route": "/customer_support/fees_and_rates"
+  },
+  "getPrivateBankingBecomeAClientData": {
+    "route": "/private_banking/current_account",
+    "id": "0da8ea1c-cfd6-4cad-908a-b976f2745c36",
+    "title": "Become a client"
+  },
+  "getPrivateBankingThanksNoteData": {
+    "route": "/private_banking/current_account",
+    "id": [
+      "fda9c51b-a85a-42e7-a61a-80c03727ad65",
+      "94ab155b-c5ab-425c-8639-1d30d3013a07"
+    ],
+    "title": "Thank you for reaching us"
+  },
+  "getPrivateBankingBorrowingContentData": {
+    "route": "/private_banking/current_account",
+    "id": "f9c3d9a4-41a5-4a1c-86b9-cc1f48e27f3d",
+    "title": "Private Banking Borrowing"
+  },
+  "getPrivateBankingBorrowingBannerData": {
+    "route": "/private_banking/current_account",
+    "id": "64f505de-9ff5-455e-963a-e91aec933bb8"
+  },
+  "getFooterData": {
+    "route": "/about-us/about-cynergy-bank",
+    "id": "bbad6543-d076-4f99-aa3e-e151bee4238b",
+    "title": "Footer Section"
+  },
+  "getDupalPageTemplateData": {
+    "route": "/privacy-policy",
+    "id": "e97a68bb-776e-4080-83d1-72398884ec55",
+    "title": "privacy policy"
+  },
+  "getTemplatePageFAQItems": {
+    "route": "/privacy-policy"
+  },
+  "getTemplatePageFileListItems": {
+    "route": "/privacy-policy"
+  },
+  "getTemplatePageMemberListItems": {
+    "route": "/privacy-policy"
+  },
+  "getTemplatePageCardListItems": {
+    "route": "/privacy-policy"
+  },
+  "getTemplatePageAwardAccreditationItems": {
+    "route": "/privacy-policy"
+  },
+  "getTemplatePageAwardAccreditationData": {
+    "route": "/privacy-policy",
+    "id": "2f0ff1e4-c08c-4604-b25e-0a2d72c08a07"
+  },
+  "getHeaderMenuData": {
+    "route": "/about-us/about-cynergy-bank"
+  },
+  "getSecuritiesContentData": {
+    "route": "/security",
+    "id": "8b8e1961-59df-4942-a9d4-104964a237b7",
+    "title": "Security"
+  },
+  "getSecurityCategoriesData": {
+    "route": "/security"
+  }
+}

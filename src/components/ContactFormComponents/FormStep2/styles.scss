@@ -1,0 +1,205 @@
+.form-container {
+  .form-unit {
+    .detail{
+      ul {
+        li{
+          display: flex;
+          align-items: center;
+        }
+        li::before{
+          content: url(/assets/icon-close-red.svg);
+          color: #d34343;
+          margin-right: 10px;
+          transform: scale(0.78);
+          margin-bottom: 3px;
+        }
+      }
+    }
+    .txt {
+      font-size: 14px;
+      font-family: OpenSans;
+      margin-bottom: 15px;
+    }
+    .btn {
+      height: 48px;
+      border-radius: 24px;
+      color: #003d4c;
+      width: 135px;
+      margin: 15px 0;
+    }
+    .links {
+      .link {
+        color: #00a792;
+        text-decoration: underline;
+        font-size: 14px;
+        font-family: OpenSans;
+        font-weight: 500;
+        display: block;
+        margin: 15px 0;
+      }
+    }
+    .instructions {
+      ul li {
+        list-style: none;
+        font-size: 14px;
+        color: #001f26;
+        margin: 15px 0;
+        font-family: OpenSans;
+        &::before {
+          content: '·';
+          font-size: 30px;
+          vertical-align: middle;
+          line-height: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+    .input-container {
+      width: 100%;
+      margin: 20px 0;
+      display: flex;
+      margin-right: 20px;
+      &.d-block {
+        width: calc(50% - 15px);
+      }
+      .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: none;
+        color: #003d4c;
+        border: 1px solid #003d4c;
+        border-radius: 0;
+        text-align: initial;
+        padding: 13px;
+        font-weight: 400;
+        &.faded {
+          color: #b8c4c6;
+        }
+        &.open {
+          color: initial !important;
+        }
+        &::after {
+          background: url(/assets/chevron-bottom.svg) no-repeat 50% 50%;
+          width: 14px;
+          height: 14px;
+          border: none;
+          background-size: 14px 14px;
+        }
+      }
+      .dropdown-menu {
+        &.show {
+          width: 100%;
+          border: 1px solid #00a792;
+          border-top: 1px solid #003d4c;
+          transform: translate(0px, 48px) !important;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+        .dropdown-item {
+          font-size: 14px;
+        }
+      }
+    }
+    .inputs {
+      border-radius: 2px;
+      border: 1px solid #003d4c;
+      height: 50px;
+      width: 50%;
+      position: relative;
+      margin-right: 15px;
+      &.help {
+        border: none;
+        margin: 0 15px 15px 0;
+      }
+      &.textarea {
+        height: 98px;
+        width: 100%;
+      }
+      textarea {
+        border: none;
+        resize: none;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        padding: 10px 15px;
+        color: #333;
+        font-size: 14px;
+        &::-webkit-input-placeholder {
+          color: #b8c4c6;
+        }
+        &:-moz-placeholder {
+          color: #b8c4c6;
+        }
+        &::-moz-placeholder {
+          color: #b8c4c6;
+        }
+        &:-ms-input-placeholder {
+          color: #b8c4c6;
+        }
+      }
+      input {
+        font-size: 14px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 10px 15px;
+        outline: none;
+        color: #333;
+        &.error {
+          border-color: #f00;
+        }
+        &::-webkit-input-placeholder {
+          color: #b8c4c6;
+        }
+        &:-moz-placeholder {
+          color: #b8c4c6;
+        }
+        &::-moz-placeholder {
+          color: #b8c4c6;
+        }
+        &:-ms-input-placeholder {
+          color: #b8c4c6;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .form-container {
+    padding: 0 42px;
+    .form-unit {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .form-container {
+    padding: 0 21px;
+    .form-unit {
+      width: 100%;
+      padding-bottom: 5px;
+      border-radius: 10px;
+      .input-container {
+        display: flex !important;
+        flex-wrap: wrap;
+        width: 100% !important;
+        margin: 0;
+        .dropdown {
+          width: 100%;
+        }
+        .inputs {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+      &.required-for {
+        .input-container {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}

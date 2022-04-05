@@ -1,0 +1,99 @@
+//.section-social-media
+.section-social-media {
+  padding: 75px 0 73px;
+  background-color: #00A792;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 162px;
+  }
+  .big-txt {
+    color: #fff;
+    font-family: GothamRounded;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+  }
+  .social-links {
+    display: flex;
+    .social-link {
+      display: flex;
+      align-items: center;
+      margin-right: 53px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .icon {
+        display: block;
+        width: 44px;
+        height: 44px;
+        &.icon-linkedin {
+          background-image: url("/assets/logos/linkedin-white.svg");
+        }
+        &.icon-twitter {
+          height: 37px;
+          background-image: url("/assets/logos/twitter-white.svg");
+        }
+        &.icon-instagram {
+          background-image: url("/assets/logos/instagram-white.svg");
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .section-social-media {
+    padding: 53px 0 50px;
+    .container {
+      padding: 0 30px 0 32px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .section-social-media {
+    padding: 50px 0 52px;
+    .container {
+      padding: 0 30px 0 32px;
+    }
+    .big-txt {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+    .social-links {
+      .social-link {
+        margin-right: 59px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-social-media {
+    padding: 43px 0 65px;
+    .container {
+      display: block;
+      padding: 0 30px 0 32px;
+    }
+    .big-txt {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 37px;
+    }
+    .social-links {
+      justify-content: center;
+      .social-link {
+        margin-right: 60px;
+      }
+    }
+  }
+}

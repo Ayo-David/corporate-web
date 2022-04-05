@@ -1,0 +1,159 @@
+// .section-personal-savings-online-isa-you-are-nearly-ready-to-start
+.section-personal-savings-online-isa-you-are-nearly-ready-to-start {
+	background-color: rgb(206, 246, 240);
+	margin-bottom: 80px;
+	padding: 60px;
+	.flex-space {
+		display: flex;
+		justify-content: space-between;	
+	}
+	.title,
+	.content-container {
+		margin-bottom: 16px;
+		color: #001f26;
+		font-family: "GothamRounded";
+		font-size: 50px;
+		font-weight: 300;
+		line-height: 60px;
+		text-align: center;
+	}
+	.subtitle {
+		color: #001F26;
+		font-family: "GothamRounded";
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 48px;
+		& > * {
+			font-family: 'GothamRounded',
+		}
+	}
+	.w-916 {
+		width: 916px;
+		margin: 0 auto;
+	}
+	.isa-box {
+		flex: 1;
+		margin: 0 15px;
+		.sm-tit {
+			color: #001f26;
+			font-family: "GothamRounded";
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			line-height: 30px;
+			text-align: center;
+		}
+		.txt-p {
+			margin-bottom: 40px;
+			p {
+				color: #001f26;
+				font-family: "OpenSans";
+				font-size: 20px;
+				line-height: 28px;
+				text-align: center;
+			}
+		}
+		
+	}
+	.btn-black {
+		text-align: center;
+		margin-bottom: 5px;
+		a {
+			display: inline-block;
+			width: 197px;
+			height: 48px;
+			border-radius: 24px;
+			background-color: #001f26;
+			color: #ffffff;
+			font-family: "OpenSans";
+			font-size: 16px;
+			font-weight: 700;
+			text-align: center;
+			line-height: 48px;
+		}
+	}
+	
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-personal-savings-online-isa-you-are-nearly-ready-to-start {
+		.content-container {
+			font-size: 30px;
+		}
+        .title {
+			margin-bottom: 20px;
+		}
+		.w-916 {
+			width: auto;
+			margin: 0 40px;
+		}
+		.isa-box {
+			flex: 1;
+			margin: 0 12px;
+			.sm-tit {
+				font-size: 16px;
+				margin-bottom: 12px;
+				line-height: 29px;
+			}
+			.txt-p {
+				margin-bottom: 20px;
+				p {
+					font-size: 14px;
+					line-height: 19px;
+				}
+			}
+		}
+		.btn-black {
+			a {
+				width: 206px;	
+			}
+		}
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-personal-savings-online-isa-you-are-nearly-ready-to-start {
+        .content-container {
+			font-size: 33px;
+			margin-bottom: 38px;
+			line-height: 40px;
+		}
+		.flex-space {
+			display: block;
+		}
+		.title {
+			font-size: 33px;
+			margin-bottom: 38px;
+		}
+		.w-916 {
+			width: auto;
+			margin: 0;
+		}
+		.isa-box {
+			margin: 0 0 40px;
+			&:last-child {
+				margin-bottom: 5px;
+			}
+			.sm-tit {		
+				margin-bottom: 18px;
+				font-size: 20px;
+			}
+			.txt-p {
+				margin-bottom: 25px;
+				p {
+					font-size: 16px;
+					line-height: 25px;
+				}
+			}
+		}
+		.btn-black {
+			a {
+				width: 220px;	
+			}
+		}
+    }
+}

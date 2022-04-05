@@ -1,0 +1,16 @@
+// .footer
+.footer {
+	overflow: hidden;
+}
+
+.faq-individual-wrap {
+	display: flex;
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1079px) {
+	.faq-individual-wrap {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+}

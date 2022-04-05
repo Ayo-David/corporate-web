@@ -1,0 +1,10 @@
+<svg id="Group_35" data-name="Group 35" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_33" data-name="Group 33" transform="translate(6.4 13.714)">
+    <g id="Group_34" data-name="Group 34">
+      <ellipse id="Oval" cx="2.51" cy="2.536" rx="2.51" ry="2.536" transform="translate(0 0)" fill="#00d1b6"/>
+      <ellipse id="Oval_Copy_2" data-name="Oval Copy 2" cx="2.51" cy="2.536" rx="2.51" ry="2.536" transform="translate(7.028 0)" fill="#00d1b6"/>
+      <ellipse id="Oval_Copy_3" data-name="Oval Copy 3" cx="2.51" cy="2.536" rx="2.51" ry="2.536" transform="translate(14.056 0)" fill="#00d1b6"/>
+    </g>
+  </g>
+  <path id="Rectangle" d="M16,3.15A12.85,12.85,0,0,0,3.15,16V28.85H16A12.85,12.85,0,0,0,25.086,6.914,12.766,12.766,0,0,0,16,3.15M16,0a16,16,0,0,1,0,32H0V16A16,16,0,0,1,16,0Z" fill="#00d1b6"/>
+</svg>

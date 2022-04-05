@@ -1,0 +1,273 @@
+.item-current-accounts-faq {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 107, 146, 0.13);
+  -moz-box-shadow: 0px 5px 12px 0px rgba(0, 107, 146, 0.13);
+  box-shadow: 0px 5px 12px 0px rgba(0, 107, 146, 0.13);
+  position: relative;
+  max-width: 886px;
+  margin: auto;
+
+  &.expanded {
+    background-color: #F9F9F9;
+
+    .top-title {
+      padding-bottom: 15px;
+
+      .icons {
+        transform: rotate(180deg);
+      }
+    }
+
+    .bottom-content {
+      display: block;
+    }
+  }
+
+  &.single {
+    .top-title {
+      padding: 18px 70px 16px 24px;
+
+      h4 {
+        font-size: 18px;
+      }
+
+      .icons {
+        top: 16px;
+      }
+    }
+  }
+
+  .top-title {
+    display: flex;
+    padding: 21px 70px 21px 24px;
+    cursor: pointer;
+
+    h4 {
+      display: block;
+      font-family: 'GothamRounded';
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #003D4C;
+    }
+
+    .icons {
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: 16px;
+      right: 26px;
+
+      &.icon-arrow {
+        background: url(/assets/chevron-bottom.svg) center center no-repeat;
+        background-size: 17px 11px;
+      }
+    }
+  }
+
+  .bottom-content {
+    display: none;
+    padding: 5px 70px 25px 24px;
+
+    .content {
+      * {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .item-current-accounts-faq {
+    &.single {
+      &.expanded {
+        .top-title {
+          padding-bottom: 12px;
+        }
+      }
+
+      .top-title {
+        padding: 21px 52px 20px 20px;
+
+        h4 {
+          font-size: 14px;
+          line-height: 30px;
+        }
+
+        .icons {
+          width: 24px;
+          height: 24px;
+          background-size: 12px 8px;
+          top: 20px;
+        }
+      }
+    }
+
+    &.expanded {
+      .top-title {
+        padding-bottom: 16px;
+      }
+    }
+
+    .top-title {
+      padding: 28px 52px 24px 24px;
+
+      h4 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .icons {
+        width: 25px;
+        height: 25px;
+        top: 26px;
+        right: 15px;
+
+        &.icon-arrow {
+          background-size: 13px 9px;
+        }
+      }
+    }
+
+    .bottom-content {
+      padding: 0 52px 0 24px;
+
+      .content {
+        * {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .item-current-accounts-faq {
+    &.single {
+      &.expanded {
+        .top-title {
+          padding-bottom: 12px;
+        }
+      }
+
+      .top-title {
+        padding: 21px 40px 20px 20px;
+
+        h4 {
+          font-size: 14px;
+          line-height: 30px;
+        }
+
+        .icons {
+          width: 24px;
+          height: 24px;
+          background-size: 12px 8px;
+          top: 24px;
+        }
+      }
+
+      .bottom-content {
+        padding: 0 40px 24px 24px;
+      }
+    }
+
+    &.expanded {
+      .top-title {
+        padding-bottom: 16px;
+      }
+    }
+
+    .top-title {
+      padding: 28px 60px 24px 24px;
+
+      h4 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .icons {
+        width: 25px;
+        height: 25px;
+        top: 29px;
+        right: 15px;
+
+        &.icon-arrow {
+          background-size: 13px 9px;
+        }
+      }
+    }
+
+    .bottom-content {
+      padding: 0 60px 24px 24px;
+
+      .content {
+        * {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .item-current-accounts-faq {
+    &.single {
+      .top-title {
+        padding: 15px 40px 15px 15px;
+
+        h4 {
+          font-size: 14px;
+          line-height: 30px;
+        }
+
+        .icons {
+          top: 18px;
+        }
+      }
+    }
+
+    .top-title {
+      padding: 24px 55px 24px 15px;
+
+      h4 {
+        font-size: 20px;
+        line-height: 38px;
+      }
+
+      .icons {
+        top: 32px;
+        right: 15px;
+
+        &.icon-arrow {
+          background-size: 17px 11px;
+        }
+      }
+    }
+
+    .bottom-content {
+      padding: 0 55px 24px 15px;
+
+      .content {
+        * {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

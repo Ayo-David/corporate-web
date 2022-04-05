@@ -1,0 +1,90 @@
+// trusted-provider
+.trusted-provider {
+  background-color: #f9f9f9;
+  padding: 72px 0;
+
+  .gray-title {
+    color: #767676;
+    font-family: GothamRounded;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    font-weight: 500;
+  }
+
+  .desc {
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #507A84;
+      font-family: OpenSans;
+      font-weight: 400;
+    }
+  }
+  .log-row{
+    height: 100%;
+    .logo-holder{
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+  // trusted-provider
+  .trusted-provider {
+    padding: 40px 0;
+
+    .gray-title {
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 21px;
+    }
+
+    .desc {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .log-row{
+      height: 100%;
+      .logo-holder{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  // trusted-provider
+  .trusted-provider {
+    padding: 40px 15px 8px;
+    .gray-title {
+      margin-bottom: 33px;
+      text-align: center;
+    }
+
+    .desc {
+      margin-bottom: 21px;
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    .log-row{
+      flex-wrap: wrap;
+      .logo-holder{
+        min-width: 50%;
+        padding: 32px 0;
+      }
+    }
+  }
+}

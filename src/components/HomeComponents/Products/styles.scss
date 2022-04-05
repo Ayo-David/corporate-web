@@ -1,0 +1,255 @@
+// .section-home-products
+.section-home-products {
+    padding: 112px 0 64px;
+    .gray-title {
+        color: #767676;
+        font-weight: 500;
+        font-family: GothamRounded;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        &.center {
+            text-align: center;
+        }
+    }
+    .big-txt {
+        font-family: GothamRounded;
+        color: #001f26;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        margin-bottom: 40px;
+        letter-spacing: 0.6px;
+    }
+    .txt {
+        font-family: OpenSans;
+        color: #001f26;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 41px;
+    }
+    // .group-module
+    .group-module {
+        padding-top: 20px;
+        &.property-finance {
+            .lefts {
+                flex: 1;
+            }
+            .rights {
+                flex-basis: 50%;
+                align-self: stretch;
+            }
+        }
+
+        &.digital-relationship {
+            .lefts {
+                flex-basis: 50%;
+                align-self: stretch;
+            }
+            .rights {
+                flex: 1;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            &.property-finance,
+            &.digital-relationship {
+                max-width: 1114px;
+                margin-left: auto;
+                margin-right: auto;
+                .lefts {
+                    width: calc(50% - 17px);
+                    margin-right: 17px;
+                    align-self: stretch;
+                    flex-basis: initial;
+                }
+                .rights {
+                    width: calc(50% - 17px);
+                    margin-left: 17px;
+                    align-self: stretch;
+                    flex-basis: initial;
+                }
+            }
+        }
+
+        .img-box {
+            background-color: #f9f9f9;
+            border-radius: 30px;
+            overflow: hidden;
+            width: 100%;
+            min-height: 350px;
+            height: 100%;
+            img {
+                width: 100%;
+                height: auto;
+                height: 100%;
+                max-width: 100%;
+            }
+            &.light-grey {
+                background-color: #f9f9f9;
+                img {
+                    width: 100%;
+                    margin: auto;
+                    display: block;
+                }
+            }
+        }
+        .ml60 {
+            margin-left: 60px;
+        }
+        .mr60 {
+            margin-right: 60px;
+        }
+        .rights {
+            .img-box {
+                position: relative;
+                .top-left-cover,
+                .bottom-right-cover {
+                    position: absolute;
+                    width: 249px;
+                    height: 230px;
+                }
+                .top-left-cover {
+                    top: 0;
+                    left: 0;
+                    background: url(/assets/top-left-black.svg) no-repeat;
+                }
+                .bottom-right-cover {
+                    bottom: 0;
+                    right: 0;
+                    background: url(/assets/right-bottom-blue.svg) no-repeat;
+                }
+            }
+        }
+        .bottom-btn {
+            .btn-green-border {
+                padding: 13px 48px;
+            }
+        }
+    }
+
+    .group-module:not(:first-child) {
+        margin-top: 136px;
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+	// .section-home-products
+    .section-home-products {
+    }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+    // .section-home-products
+    .section-home-products {
+        padding-bottom: 50px;
+        .gray-title {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .big-txt {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 20px;
+        }
+        .txt {
+            line-height: 28px;
+            font-size: 14px;
+            margin-bottom: 23px;
+        }
+        .group-module {
+            align-items: flex-start;
+            padding-top: 0;
+            &:not(:first-child) {
+                margin-top: 56px;
+            }
+            .ml60 {
+                margin-left: 24px;
+            }
+            .mr60 {
+                margin-right: 24px;
+            }
+            .img-box {
+                width: 340px;
+                height: 315px;
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+                &.light-grey {
+                    .three-img {
+                        margin-top: 39%;
+                    }
+                }
+                .three-img {
+                    width: 334px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-home-products {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        .txt {
+            font-size: 16px;
+        }
+        .group-module {
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+            .bottom-btn {
+                .btn-green-border {
+                    min-width: 315px;
+                    font-size: 14px;
+                }
+            }
+            &.property-finance {
+                flex-direction: column-reverse;
+            }
+            .rights {
+                .img-box {
+                    .top-left-cover {
+                        left: -72px;
+                    }
+                    .bottom-right-cover {
+                        right: -77px;
+                    }
+                }
+            }
+            .ml60 {
+                margin-left: 0;
+            }
+            .mr60 {
+                margin-right: 0;
+            }
+            .img-box {
+                width: 315px;
+                height: 220px;
+                min-height: auto;
+                margin: 0 auto 30px;
+                img {
+                    height: 100%;
+                    width: auto;
+                    
+                }
+                &.light-grey {
+                    .three-img {
+                        margin-top: 7%;
+                    }
+                }
+                .three-img {
+                    width: 334px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

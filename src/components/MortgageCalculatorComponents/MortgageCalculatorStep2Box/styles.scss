@@ -1,0 +1,389 @@
+// .section-mortgage-calculator-step-2-box
+.section-mortgage-calculator-step-2-box {
+    padding: 0 0 60px;
+    .top-gray-title {
+        height: 22px;
+        color: #767676;
+        font-family: "GothamRounded";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 39px;
+        text-transform: uppercase;
+    }
+    .your-mortgage-area {
+        .blue-title {
+            color: #003d4c;
+            font-family: "GothamRounded";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 32px;
+        }
+        .white-box {
+            box-shadow: 0 8px 24px #dbe0e6;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 32px;
+            margin-bottom: 40px;
+            .little-title {
+                margin-bottom: 20px;
+                line-height: 17px;
+                color: #003d4c;
+                font-family: "GothamRounded";
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            .three-grid {
+                .groups {
+                    .price-txt {
+                        color: #003d4c;
+                        font-family: "GothamRounded";
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        margin-bottom: 10px;
+                        &.big-green {
+                            color: #00a792;
+                            font-family: "GothamRounded";
+                            font-size: 36px;
+                            font-weight: 500;
+                        }
+                    }
+                    .sub-txt {
+                        margin-bottom: 10px;
+                    }
+                    .sub-txt,
+                    .txt {
+                        color: #003d4c;
+                        font-family: "GothamRounded";
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .mortgage-summary-box {
+            padding: 0 32px 52px;
+            .title {
+                text-transform: uppercase;
+                color: #001f26;
+                font-family: "GothamRounded";
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .txt-area {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .lefts {
+                    padding-right: 100px;
+                    .txt {
+                        line-height: 18px;
+                        color: #001f26;
+                        font-family: "GothamRounded";
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                }
+                .rights {
+                    .btn-green-border {
+                        padding: 13px 48px;
+                    }
+                }
+            }
+        }
+    }
+    .what-are-my-options {
+        .title {
+            color: #001f26;
+            font-family: "GothamRounded";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+        .grey-box-list {
+            .grey-box {
+                margin-bottom: 24px;
+                border-radius: 10px;
+                background-color: #eef0f1;
+                padding: 24px 24px 24px 32px;
+                display: flex;
+                .lefts {
+                    color: #003d4c;
+                    font-family: "GothamRounded";
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    max-width: 140px;
+                    margin-top: -8px;
+                }
+                .rights {
+                    display: flex;
+                    flex: 1;
+                    padding-left: 100px;
+                    .three-data {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .gropus {
+                            padding-right: 20px;
+                            flex: 1;
+                            margin-bottom: 24px;
+                            .gray-txt {
+                                text-transform: uppercase;
+                                color: #767676;
+                                font-family: "GothamRounded";
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 2px;
+                            }
+                            .values, 
+                            .price,
+                            .txt {
+                                color: #003d4c;
+                                font-family: "GothamRounded";
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    .long-txt,
+                    p.txt {
+                        color: #003d4c;
+                        font-family: "GothamRounded";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        padding-right: 50px;
+                    }
+                    .right-arrow {
+                        display: flex;
+                        align-items: center;
+                        .btn-right-arrow {
+                            background: url("/assets/blue-right-arrow.svg") center center no-repeat;
+                            width: 30px;
+                            height: 30px;
+                            background-size: 30px 30px;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-btns {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+            .right-btn {
+                .btn {
+                    &.btn-green-border {
+                        padding: 13px 48px;
+                    }
+                    &.btn-green {
+                        margin-left: 32px;
+                        height: 48px;
+                        padding: 0 52px;
+                        line-height: 48px;
+                        border-radius: 24px;
+                        font-size: 16px;
+                    }
+                }  
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-mortgage-calculator-step-2-box {
+        padding: 10px 0 0;
+        .top-gray-title {
+            text-align: center;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .your-mortgage-area {
+            .white-box {
+                .three-grid {
+                    .groups {
+                        .sub-txt {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .mortgage-summary-box {
+                .txt-area {
+                    .lefts {
+                        padding-right: 24px;
+                    }
+                    .rights {
+                        .btn-green-border {
+                            min-width: 156px;
+                        }
+                    }
+                }
+            }
+        }
+        .what-are-my-options {
+            .grey-box-list {
+                .grey-box {
+                    .lefts {
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin-top: 10px;
+                    }
+                    .rights {
+                        padding-left: 6px;
+                        .three-data {
+                            .gropus {
+                                .gray-txt {
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                }
+                                .values {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .long-txt {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+            .bottom-btns {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-mortgage-calculator-step-2-box {
+        padding: 15px 0 35px;
+        .container {
+            padding: 0 24px;
+        }
+        .top-gray-title {
+            text-align: left;
+        }
+        .your-mortgage-area {
+            .white-box {
+                padding: 20px;
+                margin-bottom: 50px;
+                .three-grid {
+                    .row {
+                        .col {
+                            &:last-child {
+                                .gropus {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .groups {
+                        margin-bottom: 50px;
+                        .price-txt {
+                            font-size: 36px;
+                            margin-bottom: 20px;
+                        }
+                        .sub-txt {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .mortgage-summary-box {
+                padding: 0 0 40px;
+                .title {
+                    margin-bottom: 16px;
+                }
+                .txt-area {
+                    flex-direction: column;
+                    .lefts {
+                        padding-right: 0;
+                    }
+                    .rights  {
+                        .btn-green-border {
+                            min-width: 327px;
+                        }
+                    }
+                }
+            }
+        }
+        .what-are-my-options {
+            .grey-box-list {
+                .grey-box {
+                    padding: 24px 32px 24px;
+                    flex-direction: column;
+                    margin-bottom: 24px;
+                    &:last-child {
+                        margin-bottom: 35px;
+                    }
+                    .lefts {
+                        margin-top: 0;
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        line-height: 28px;
+                        max-width: none;
+                    }
+                    .rights {
+                        padding-left: 0;
+                        padding-top: 15px;
+                        flex-direction: column;
+                        .three-data {
+                            flex-direction: column;
+                            .gropus {
+                                margin-bottom: 15px;
+                                .gray-txt {
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    margin-bottom: 4px;
+                                }
+                                .values {
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                        .long-txt {
+                            padding-right: 0;
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+                        .right-arrow {
+                            padding-top: 28px;
+                        }
+                    }
+                }
+            }
+            .bottom-btns {
+                justify-content: center;
+                text-align: center;
+                .right-btn {
+                    .btn {
+                        min-width: 327px;
+                        &.btn-green {
+                            margin-left: 0;
+                            margin-top: 24px;
+                            padding: 0 47px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

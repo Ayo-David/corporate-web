@@ -1,0 +1,322 @@
+// .benefits
+.personal-account-benefits {
+  max-width: 1258px;
+  width: 100%;
+  margin: 0 auto;
+
+  &:last-child {
+    margin-bottom: 72px !important;
+  }
+
+  .section-title{
+    color: #767676;
+    font-family: GothamRounded;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+
+  .section{
+    margin-bottom: 144px;
+    gap: 31px;
+    .content-holder{
+      flex-basis: 50%;
+      .content-title{
+        color: #001F26;
+        font-size: 50px;
+        font-family: GothamRounded;
+        font-weight: 400;
+        line-height: 60px;
+        margin-bottom: 40px;
+      }
+      .field_text{
+        color: #001F26;
+        p{
+          line-height: 28px;
+          font-size: 18px;
+          font-weight: 400;
+          font-family: OpenSans;
+          margin-bottom: 26px;
+          a{
+            color: #001f26;
+            font-weight: 700;
+          }
+          strong{
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        h4{
+          font-size: 24px;
+          font-family: GothamRounded;
+          font-weight: 500;
+          line-height: 28px;
+          margin-bottom: 16px;
+        }
+        ul{
+          li{
+            background: url('/assets/list-icon.svg') no-repeat 0 1px;
+            background-size: 21px 15px;
+            padding-left: 39px;
+            list-style: none;
+            font-size: 18px;
+            font-family: OpenSans;
+            font-weight: 400;
+            line-height: 27px;
+            padding-bottom: 17px;
+
+            a{
+              color: #001f26;
+              font-weight: 700;
+            }
+          }
+        }
+        h1, h2{
+          font-size: 48px;
+          font-family: GothamRounded;
+          font-weight: 400;
+          line-height: 55px;
+          margin-bottom: 50px;
+        }
+        h3{
+          font-size: 20px;
+          font-family: OpenSans;
+          font-weight: 600;
+          line-height: 28px;
+          margin-bottom: 26px;
+        }
+      }
+    }
+
+    .image-holder{
+      flex-basis: auto;
+      align-self: center;
+      img{
+        border-radius: 20px;
+        height: 626px;
+        width: 542px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.ready-to-join-personal{
+  justify-content: center;
+  align-items: center;
+  background-color: #CEF6F0;
+  padding: 60px 0;
+  color: #001F26;
+  margin-top: -72px;
+  height: 368px;
+
+  .title{
+    font-size: 48px;
+    line-height: 60px;
+    font-family: GothamRounded;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .content{
+    max-width: 893px;
+    width: 100%;
+
+    .text{
+      font-weight: 500;
+      font-size: 24px;
+      font-family: GothamRounded;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 430px;
+    }
+
+    .btn{
+      font-size: 16px;
+
+      &.btn-black {
+        background: #001F26;
+        min-width: 283px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1270px width */
+@media (max-width: 1270px) {
+  // .benefits
+  .personal-account-benefits {
+    .section-title{
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 15px;
+    }
+
+    .section{
+      margin-bottom: 50px;
+      .content-holder{
+        .content-title{
+          font-size: 30px;
+          line-height: 34px;
+          margin-bottom: 30px;
+        }
+        .field_text{
+          p{
+            line-height: 20px;
+            font-size: 12px;
+            margin-bottom: 18px;
+
+            strong{
+              font-size: 14px;
+            }
+          }
+          h4{
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 20px;
+          }
+          ul{
+            li{
+              background-size: 15px 15px;
+              padding-left: 24px;
+              font-size: 12px;
+              line-height: 17px;
+              padding-bottom: 10px;
+              a{
+                font-weight: 400;
+              }
+            }
+          }
+          h1, h2{
+            font-size: 30px;
+            line-height: 34px;
+            margin-bottom: 29px;
+          }
+          h3{
+            font-size: 14px;
+            line-height: 15px;
+            margin-bottom: 18px;
+          }
+        }
+      }
+
+      .image-holder{
+        flex-basis: calc(50% - 40px);
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .ready-to-join-personal{
+    padding: 40px 0;
+
+    .title{
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+    .content{
+
+      .text{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 41px;
+      }
+
+      .btn{
+        font-size: 16px;
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    // benefits
+  .personal-account-benefits {
+    padding: 0 16px;
+    .section-title{
+      margin-bottom: 15px;
+      margin-top: 20px;
+      text-align: center;
+
+      &.mobile-show {
+        display: flex !important;
+        justify-content: flex-start;
+      }
+    }
+    .section{
+      margin-bottom: 30px;
+      .content-holder{
+        &.content-right{
+          padding-left: 0;
+        }
+        .content-title{
+          font-size: 30px;
+          line-height: 34px;
+          margin-bottom: 30px;
+        }
+        .field_text{
+          p{
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 18px;
+
+            strong{
+              font-size: 14px;
+            }
+          }
+          h4{
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 20px;
+          }
+          ul{
+            li{
+              background-size: 15px 15px;
+              padding-left: 24px;
+              font-size: 12px;
+              line-height: 17px;
+              padding-bottom: 10px;
+              a{
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      .image-holder{
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .ready-to-join-personal{
+    padding: 40px 25px 3px;
+
+    .title{
+      font-size: 33px;
+      line-height: 36px;
+      margin-bottom: 42px;
+    }
+    .content{
+
+      .text{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        max-width: 315px;
+      }
+
+      .btn{
+        font-size: 16px;
+        margin-bottom: 47px;
+      }
+    }
+  }
+}

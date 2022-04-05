@@ -1,0 +1,134 @@
+.section-results {
+  box-shadow: 0 5px 12px rgba(0, 107, 146, 0.13);
+  margin: 40px 0;
+  .headers {
+    display: flex;
+    .header {
+      font-family: GothamRounded;
+      font-weight: 500;
+      color: #001f26;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #b8c4c6;
+      &.light,
+      &.neutral {
+        width: 20%;
+        padding: 20px 30px;
+      }
+      &.neutral {
+        background: #f9f9f9;
+      }
+      &.dark {
+        width: 60%;
+        padding: 20px 30px;
+        background: #eef0f1;
+      }
+    }
+  }
+  .results {
+    .result {
+      font-family: GothamRounded;
+      font-weight: 500;
+      color: #001f26;
+      display: flex;
+      &:nth-of-type(2n) {
+        background: #f9f9f9;
+      }
+    }
+    .product {
+      width: 20%;
+      padding: 15px 30px;
+      color: #003d4c;
+    }
+    .category {
+      width: 20%;
+      padding: 15px 30px;
+      color: #003d4c;
+    }
+    .document {
+      width: 60%;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 15px;
+      }
+      .title {
+        color: #7f9ea5;
+        font-family: OpenSans;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .description {
+        font-family: GothamRounded;
+        font-size: 16px;
+        font-weight: 700;
+        color: #003d4c;
+      }
+      .download {
+        cursor: pointer;
+        margin-left: auto;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .section-results {
+    .headers {
+      .header {
+        font-size: 18px;
+      }
+    }
+    .results {
+      .result {
+        .product {
+          overflow-wrap: break-word;
+        }
+        .product,
+        .category,
+        .document {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .section-results {
+    .headers {
+      .header {
+        &.light {
+          width: 100%;
+        }
+      }
+    }
+    .results {
+      .result {
+        flex-direction: column;
+        .product,
+        .category,
+        .document {
+          display: flex;
+          width: 100%;
+          padding: 15px 20px;
+          font-size: 12px;
+          .label {
+            margin-right: 20px;
+            font-size: 12px;
+          }
+        }
+        .document {
+          .left {
+            .title {
+              font-size: 8px;
+            }
+            .description {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

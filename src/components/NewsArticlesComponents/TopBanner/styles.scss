@@ -1,0 +1,153 @@
+// .section-articles-banner
+.section-articles-banner {
+    background-color: #D34343 !important;
+
+    .background-img {
+      height: 528px;
+      background-size: contain !important;
+      mask: url('/assets/mask-curve-right-top.svg') right no-repeat;
+    }
+
+    .container {
+      height: 100%;
+      position: relative;
+    }
+
+    .hero-business-content {
+        max-width: 720px;
+
+        padding-left: 90px;
+        position: absolute;
+        bottom: 63px;
+        left: 0;
+
+        .date-txt {
+            color: #003D4C;
+            font-family: GothamRounded;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .big-txt {
+            font-family: GothamRounded;
+            font-size: 64px;
+            line-height: 70px;
+            max-width: 30ch;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow : hidden;
+            word-break: break-word;
+            color: #001F26;
+            font-weight: 300;
+        }
+        .bank-txt {
+            color: #001F26;
+            font-family: OpenSans;
+            font-size: 22px;
+            line-height: 24px;
+            max-width: 450px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            word-break: break-word;
+            color: #152229;
+            font-weight: 300;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .section-articles-banner {
+    .background-img {
+      mask: url('/assets/mask-curve-right-top-table.svg') right no-repeat;
+    }
+
+    .hero-business-content {
+      padding-left: 74px;
+
+      .big-txt {
+        max-width: 500px;
+        font-size: 48px;
+        line-height: 52px;
+        -webkit-line-clamp: 3;
+      }
+    }
+  }
+
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+    .section-articles-banner {
+        .hero-business-content {
+            padding: 74px 30px 74px;
+            bottom: 0;
+
+            .date-txt {
+                margin-bottom: 26px;
+            }
+            .bank-txt {
+              max-width: 350px;
+              color: #001f26;
+              font-size: 16px;
+              line-height: 24px;
+            }
+            .big-txt {
+              max-width: 380px;
+              font-size: 40px;
+              line-height: 46px;
+            }
+        }
+    }
+
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-articles-banner {
+        .background-img {
+          mask: url('/assets/mask-curve-mobile.svg') center no-repeat !important;
+          background-size: cover !important;
+        }
+
+        .hero-business-content {
+          position: relative;
+          padding: 20px 30px 0 30px;
+          bottom: 30px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .container {
+            padding: 0 30px;
+        }
+        .hero-business-content {
+            .date-txt {
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            .big-txt {
+                max-width: none;
+                line-height: 46px;
+            }
+            .bank-txt {
+                max-width: none;
+                margin: 20px 0 35px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+}

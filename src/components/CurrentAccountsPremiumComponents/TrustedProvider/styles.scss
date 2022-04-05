@@ -1,0 +1,281 @@
+.section-trusted-provider {
+  padding: 86px 107px 88px 186px;
+  background-color: #F9F9F9;
+  position: relative;
+  height: 257px;
+  justify-content: center;
+
+  &.private-banking-trusted-provider {
+    padding: 72px 0;
+    .container {
+      padding: 0 163px 0 162px;
+    }
+  }
+
+  &.personal-trusted-provider {
+    padding: 72px 101px 67px 187px;
+
+    .trusted-provider-content {
+      .left-content {
+        margin-right: 130px;
+
+        .title {
+          margin-bottom: 32px;
+        }
+
+        .txt {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .trusted-provider-content {
+    display: flex;
+
+    .left-content {
+      width: 413px;
+      margin-right: 24px;
+
+      .title {
+        color: #767676;
+        font-family: GothamRounded;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+
+      .txt {
+        font-family: 'Open Sans';
+        color: #003D4C;
+        font-size: 16px;
+        line-height: 21px;
+        &.smaller-txt {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .right-content {
+      flex: 1 1 auto;
+
+      ul {
+        height: 100%;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .section-trusted-provider {
+    padding: 40px 0;
+
+    &.personal-trusted-provider {
+      padding: 36px 0 40px;
+
+      .trusted-provider-content {
+        .left-content {
+          margin-right: 45px;
+
+          .title {
+            margin-bottom: 18px;
+          }
+
+          .txt {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    &.private-banking-trusted-provider {
+      padding: 40px 0;
+      .container {
+        padding: 0 58px;
+      }
+    }
+
+    .container {
+      padding: 0 40px;
+    }
+
+    .trusted-provider-content {
+      .left-content {
+        width: 319px;
+        margin-right: 45px;
+
+        .title {
+          font-size: 14px;
+        }
+
+        .txt {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .right-content {
+      ul {
+        li {
+          img {
+            width: auto;
+            height: 49px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+  .section-trusted-provider {
+    padding: 36px 0;
+
+    &.personal-trusted-provider {
+      padding: 36px 0 40px;
+
+      .trusted-provider-content {
+        .left-content {
+          margin-right: 45px;
+
+          .title {
+            margin-bottom: 18px;
+          }
+
+          .txt {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    &.private-banking-trusted-provider {
+      padding: 40px 0;
+      .container {
+        padding: 0 32px;
+      }
+    }
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .trusted-provider-content {
+      .left-content {
+        width: 319px;
+        margin-right: 45px;
+
+        .title {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 21px;
+        }
+
+        .txt {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .right-content {
+      ul {
+        li {
+          img {
+            width: auto;
+            height: 49px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-trusted-provider {
+    padding: 34px 0 42px;
+
+    &.personal-trusted-provider {
+      padding: 40px 0;
+
+      .trusted-provider-content {
+        display: block;
+
+        .left-content {
+          margin-right: 0;
+
+          .title {
+            margin-bottom: 34px;
+          }
+
+          .txt {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .trusted-provider-content {
+      display: block;
+
+      .left-content {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+
+        .title {
+          font-size: 14px;
+          margin-bottom: 32px;
+          text-align: center;
+        }
+
+        .txt {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .right-content {
+        ul {
+          flex-wrap: wrap;
+
+          li {
+            width: 50%;
+            margin-bottom: 67px;
+
+            .logo {
+              display: flex;
+              justify-content: center;
+
+              img {
+                width: auto;
+                height: 86px;
+              }
+            }
+
+            &:last-child {
+              width: 100%;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

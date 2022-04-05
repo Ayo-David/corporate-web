@@ -1,0 +1,412 @@
+// .section-view-stories
+.section-tab-bar {
+  .container{
+    padding: 0 48px;
+  }
+    .up-txt {
+        padding: 0 0 20px;
+        color: #767676;
+        font-family: GothamRounded;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .nav-bar {
+        ul {
+            display: flex;
+            border-bottom: 1px solid #DDE1E6;
+            margin-bottom: 30px;
+            li {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                //flex: 0 0 25%;
+                min-width: 33%;
+                position: relative;
+                .tab-items {
+                    width: 100%;
+                    color: #001F26;
+                    font-family: GothamRounded;
+                    font-size: 32px;
+                    line-height: 38px;
+                    text-align: center;
+                    display: block;
+                    padding: 20px 0;
+                    &.current {
+                        font-weight: 500;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -1px;
+                            left: 0;
+                            background-color: #00D1B6;
+                            border-radius: 2.5px 2.5px 0 0;
+                            width: 100%;
+                            height: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  .card-row{
+    .account-type {
+      box-shadow: 0 10px 16px rgba(184, 196, 198, 0.82);
+      border-radius: 20px;
+      margin-bottom: 60px;
+
+      .header{
+        min-height: 152px;
+        background-color: #00D1B6;
+        border-radius: 20px 20px 0 0;
+        padding: 18px 30px;
+        color: #001F26;
+
+        .header-title {
+          font-size: 32px;
+          line-height: 38px;
+          font-family: GothamRounded;
+          font-weight: 500;
+          &.long {
+            width: 255px;
+          }
+          &.medium {
+            width: 255px;
+          }
+          &.short {
+            width: 0;
+          }
+        }
+        .header-sub-title {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 20px;
+          font-family: GothamRounded;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+      .aer{
+        min-height: 285px;
+      }
+      .opens-with{
+        min-height: 107px;
+      }
+      .acc-management{
+        min-height: 97px;
+      }
+      .withdrawal{
+        min-height: 135px;
+      }
+      .issue{
+        min-height: 100px;
+      }
+      .border-bottom-1{
+        border-bottom: 1px solid #EEF0F1;
+      }
+      .content{
+        padding: 22px 30px 0;
+        .gray-title, h5 {
+          line-height: 22px;
+          margin-bottom: 12px;
+          color: #767676;
+          font-size: 18px;
+        }
+        .gray-title {
+          font-family: GothamRounded;
+          font-weight: 500;
+        }
+        .value, p {
+          color: #001F26;
+          font-family: OpenSans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          margin-bottom: 16px;
+        }
+        .value {
+          .font-size-18 {
+            font-size: 18px !important;
+          }
+        }
+        h2{
+          font-size: 32px;
+          line-height: 38px;
+          font-family: GothamRounded;
+          font-weight: 500;
+          margin-bottom: 18px;
+        }
+
+        .managements{
+          padding: 10px 0;
+          .icon{
+            font-size: 18px;
+            font-weight: 400;
+            color: #001F26;
+            padding-left: 39px;
+            margin-right: 25px;
+
+            &.wifi{
+              background: url('/assets/wifi.svg') no-repeat 0 50%;
+              background-size: 26px 26px;
+            }
+            &.mail{
+              background: url('/assets/mail.svg') no-repeat 0 50%;
+              background-size: 24px 24px;
+            }
+          }
+        }
+
+        ul{
+          li{
+            background: url('/assets/list-icon.svg') no-repeat 0 1px;
+            padding-left: 39px;
+            list-style: none;
+            font-size: 17px;
+            font-family: OpenSans;
+            font-weight: 400;
+            line-height: 24px;
+            padding-bottom: 14px;
+
+            a{
+              color: #001f26;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .issue-text{
+          font-size: 16px;
+          color: #767676;
+          font-family: GothamRounded;
+          font-weight: 400;
+          padding-top: 12px;
+          line-height: 20px;
+
+          b{
+            font-family: GothamRounded;
+            font-weight: 600;
+            display: flex;
+          }
+        }
+
+        .btn {
+          width: 100%;
+          height: 48px;
+          border-radius: 24px;
+          line-height: 44px;
+          font-size: 16px;
+          margin: 5px 0 30px;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+    // .section-tab-bar
+    .section-tab-bar {
+        .up-txt {
+            padding: 40px 0  25px;
+        }
+        .nav-bar {
+            ul {
+                li {
+                    .tab-items {
+                        font-size: 20px;
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+
+      .card-row{
+        .account-type {
+          border-radius: 13px;
+          margin-bottom: 40px;
+
+          .header{
+            min-height: 80px;
+            border-radius: 13px 13px 0 0;
+            padding: 11px 20px;
+
+            .header-title {
+              font-size: 20px;
+              line-height: 22px;
+              &.long {
+                width: 193px;
+              }
+              &.medium {
+                width: 166px;
+              }
+              &.short {
+                width: 0;
+              }
+            }
+            .header-sub-title {
+              font-size: 14px;
+              line-height: 14px;
+            }
+          }
+          .aer{
+            min-height: 214px;
+          }
+          .opens-with{
+            min-height: 80px;
+            .content{
+              h2{
+                margin-bottom: 5px;
+              }
+            }
+          }
+          .acc-management{
+            min-height: 82px;
+          }
+          .withdrawal{
+            min-height: 115px;
+            .content{
+              padding-bottom: 3px;
+            }
+          }
+          .issue{
+            min-height: 80px;
+          }
+          .border-bottom-1{
+            border-bottom: 1px solid #EEF0F1;
+          }
+          .content{
+            padding: 15px 20px;
+            .gray-title, h5 {
+              line-height: 12px;
+              margin-bottom: 20px;
+              font-size: 12px;
+            }
+            .value, p {
+              font-size: 14px;
+              line-height: 19px;
+              margin-bottom: 10px;
+            }
+            h2{
+              font-size: 20px;
+              line-height: 20px;
+              margin-bottom: 16px;
+            }
+
+            .managements{
+              padding: 0;
+              .icon{
+                font-size: 12px;
+                padding-left: 28px;
+                margin-right: 25px;
+                margin-bottom: 0;
+
+                &.wifi{
+                  background-size: 18px 18px;
+                }
+                &.mail{
+                  background-size: 18px 18px;
+                }
+              }
+            }
+
+            ul{
+              li{
+                padding-left: 28px;
+                background-size: 18px 18px;
+                font-size: 14px;
+                line-height: 18px;
+                padding-bottom: 13px;
+              }
+            }
+
+            .issue-text{
+              font-size: 12px;
+              padding-top: 12px;
+              line-height: 18px;
+            }
+
+            .btn {
+              width: 100%;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+
+}
+
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-tab-bar {
+      .container{
+        padding: 0 30px;
+      }
+        .up-txt {
+            font-size: 14px;
+            padding: 0 0 0;
+        }
+        .nav-bar {
+            overflow-x: auto;
+            ul {
+                width: 690px;
+                margin-bottom: 0;
+                li {
+                    .tab-items {
+                        color: #001f26;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+      .card-row{
+        margin-top: 40px;
+        .account-type {
+          border-radius: 13px;
+          margin-bottom: 30px;
+
+          .header{
+            min-height: 152px;
+            border-radius: 13px 13px 0 0;
+            padding: 20px 30px;
+
+            .header-title {
+              font-size: 30px;
+              line-height: 34px;
+              &.long {
+                width: 255px;
+              }
+              &.medium {
+                width: 230px;
+              }
+              &.short {
+                width: 0;
+              }
+            }
+            .header-sub-title {
+              font-size: 14px;
+              line-height: 14px;
+            }
+          }
+          .aer{
+            min-height: 0;
+          }
+          .issue{
+            min-height: 0;
+          }
+          .border-bottom-1{
+            border-bottom: 1px solid #EEF0F1;
+          }
+          .content{
+            padding: 15px 30px;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,182 @@
+// highlighted-section
+.highlighted-section{
+  background-color: #001F26;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 144px;
+  .left-section{
+    padding: 0 48px;
+    flex: 1;
+    .title {
+      font-size: 48px;
+      line-height: 60px;
+      font-family: GothamRounded;
+      font-weight: 400;
+    }
+    .desc{
+      margin-top: 40px;
+      font-size: 20px;
+      font-family: OpenSans;
+      font-weight: 500;
+      line-height: 28px;
+      padding-right: 30px;
+    }
+  }
+  .right-section{
+    flex: 1;
+    align-items: stretch;
+    gap: 59px 84px;
+
+    .section-card{
+      width: calc(50% - 42px);
+
+      .icons {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+
+        &.hands, &.Entertainment{
+          width: 56px;
+          height: 56px;
+          background-image: url(/assets/new-hand-shake.svg)
+        }
+        &.tablet, &.Phone{
+          width: 56px;
+          height: 56px;
+          background-image: url(/assets/new-tablet.svg)
+        }
+        &.clock, &.Accounts{
+          width: 56px;
+          height: 56px;
+          background-image: url(/assets/new-phone.svg)
+        }
+        &.alert, &.Community{
+          width: 58px;
+          height: 58px;
+          background-image: url(/assets/new-time.svg)
+        }
+      }
+      .txt{
+        font-size: 20px;
+        font-family: OpenSans;
+        padding-right: 20px;
+
+        .txt-green {
+          color: #00D1B6;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1270px width */
+@media (max-width: 1270px) {
+  // highlighted-section
+  .highlighted-section{
+    .left-section{
+      padding: 0;
+      .title {
+        font-size: 30px;
+        font-family: GothamRounded;
+        font-weight: 400;
+        line-height: initial;
+      }
+      .desc{
+        margin-top: 40px;
+        font-size: 16px;
+      }
+    }
+    .right-section{
+      padding: 0 0 0 20px;
+      gap: 41px 24px;
+      grid-gap: 41px 24px;
+
+      .section-card{
+        width: calc(50% - 42px);
+
+        .icons {
+          margin-bottom: 10px;
+
+          &.hands, &.Entertainment{
+            width: 32px;
+            height: 32px;
+           }
+          &.tablet, &.Phone{
+            width: 32px;
+            height: 32px;
+          }
+          &.clock, &.Accounts{
+            width: 32px;
+            height: 32px;
+          }
+          &.alert, &.Community{
+            width: 32px;
+            height: 32px;
+          }
+        }
+        .txt{
+          font-size: 14px;
+
+        }
+      }
+    }
+  }
+}
+
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .highlighted-section{
+    .container {
+      padding: 0 30px;
+    }
+    .left-section{
+      padding: 0;
+      .title {
+        font-size: 26px;
+        font-family: GothamRounded;
+        font-weight: 400;
+      }
+      .desc{
+        margin: 60px 0 ;
+        font-size: 16px;
+        padding-right: 0;
+      }
+    }
+    .right-section{
+      padding: 0;
+      gap: 56px;
+
+      .section-card{
+        width: 100%;
+        text-align: left;
+
+        .icons {
+          margin-bottom: 20px;
+
+          &.hands, &.Entertainment{
+            width: 32px;
+            height: 32px;
+          }
+          &.tablet, &.Phone{
+            width: 32px;
+            height: 32px;
+          }
+          &.clock, &.Accounts{
+            width: 32px;
+            height: 32px;
+          }
+          &.alert, &.Community{
+            width: 32px;
+            height: 32px;
+          }
+        }
+        .txt{
+          font-size: 14px;
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+}

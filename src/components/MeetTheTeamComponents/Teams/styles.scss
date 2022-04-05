@@ -1,0 +1,182 @@
+// .section-meet-teams
+.section-meet-teams {
+  .team-long-txt {
+    color: #001f26;
+    font-family: GothamRounded;
+    font-size: 48px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 60px;
+    padding: 0 70px 56px;
+    h2 {
+      font-size: 48px;
+      font-family: GothamRounded;
+      font-weight: 400;
+      color: #001f26;
+    }
+  }
+  .team-list {
+    .items {
+      display: flex;
+      margin-bottom: 30px;
+      padding: 24px;
+      .left-photo {
+        flex: 0 0 240px;
+        max-width: 240px;
+        height: 340px;
+        border-radius: 10px 0;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .right-area {
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .name-txt {
+          color: #001f26;
+          font-family: GothamRounded;
+          font-size: 32px;
+          font-weight: 500;
+        }
+        .top-area {
+          padding-bottom: 30px;
+        }
+        .sub-txt {
+          color: #003d4c;
+          font-family: GothamRounded;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 19px;
+          text-transform: uppercase;
+        }
+        .detail-txt {
+          color: #001f26;
+          font-size: 14px;
+          line-height: 20px;
+          p {
+            font-family: OpenSans;
+            color: #001f26;
+          }
+        }
+        .bottom-icons {
+          padding: 0;
+          .icons {
+            margin-right: 26px;
+            &.icon-in {
+              background: url(/assets/icon-in.svg) center center no-repeat;
+              background-size: 30px 30px;
+              width: 30px;
+              height: 30px;
+            }
+            &.icon-email {
+              background: url(/assets/icon-email.svg) center center no-repeat;
+              background-size: 30px 23px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1160px) {
+  .section-meet-teams {
+    .team-long-txt {
+      padding: 20px 0 60px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .team-list {
+      .col {
+        margin-bottom: 40px;
+      }
+      .items {
+        padding: 30px;
+        border-radius: 10px;
+        flex-direction: column;
+        margin-bottom: 0;
+        height: 100%;
+        background-color: #fff;
+        background-color: #f9f9f9;
+        .left-photo {
+          flex: 0 0 258px;
+          max-width: 289px;
+          height: 258px;
+          overflow: hidden;
+          margin: 0 0 23px;
+          width: 289px;
+          img {
+            width: 100%;
+            margin-top: -25px;
+          }
+        }
+        .right-area {
+          padding-left: 0;
+          flex: 1;
+          .top-area {
+            padding-bottom: 47px;
+          }
+          .name-txt {
+            font-size: 32px;
+            font-weight: 500;
+            max-width: 155px;
+            margin-bottom: 20px;
+            line-height: 34px;
+          }
+          .sub-txt {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .section-meet-teams {
+    .team-long-txt {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-meet-teams {
+    .team-long-txt {
+      padding: 0 15px 60px;
+      font-size: 26px;
+      line-height: 40px;
+    }
+    .team-list {
+      padding: 0 15px;
+      .col {
+        margin-bottom: 20px;
+      }
+      .items {
+        background-color: #f9f9f9;
+        .left-photo {
+          max-width: 255px;
+          width: 255px;
+        }
+        .right-area {
+          .detail-txt {
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,260 @@
+.modal-dialog {
+  &.modal-contact-us {
+    max-width: 612px;
+    .modal-content {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 12px 0 rgba(0, 107, 146, 0.12);
+
+      .modal-header {
+        border-bottom-color: #DDE1E6;
+        padding: 28px 28px 27px;
+  
+        .modal-title {
+          color: #003D4C;
+          font-family: GothamRounded;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+  
+        .btn-close {
+          width: 18px;
+          height: 18px;
+          padding: 0;
+          .icon {
+            &.icon-close {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-image: url("/assets/icon-close-black.svg");
+              background-size: 100%;
+            }
+          }
+        }
+      }
+  
+      .modal-body {
+        border-bottom-color: #DDE1E6;
+        padding: 0;
+        .box-form {
+          padding: 38px 70px 38px 73px;
+          .data-row {
+            margin-top: 47px;
+    
+            &:first-child {
+              margin-top: 0;
+            }
+    
+            .label-txt {
+              color: #003d4c;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 20px;
+              margin-bottom: 8px;
+            }
+    
+            .check-choose {
+              display: flex;
+              margin-top: 14px;
+    
+              .radio-wrap {
+                margin-right: 66px;
+                &:last-child {
+                  margin-right: 0;
+                }
+                label {
+                  color: #003D4C;
+                  font-family: OpenSans;
+                  font-size: 14px;
+                  font-weight: 700;
+                  line-height: 25px;
+                }
+              }
+            }
+    
+            .inputs {
+              border-radius: 2px;
+              border: 1px solid #003d4c;
+              height: 50px;
+              position: relative;
+    
+              input {
+                font-size: 14px;
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 10px 15px;
+                outline: none;
+                color: #333;
+    
+                &.isPrice {
+                  padding-left: 35px;
+                }
+    
+                &::-webkit-input-placeholder {
+                  color: #7f9ea5;
+                }
+    
+                &:-moz-placeholder {
+                  color: #7f9ea5;
+                }
+    
+                &::-moz-placeholder {
+                  color: #7f9ea5;
+                }
+    
+                &:-ms-input-placeholder {
+                  color: #7f9ea5;
+                }
+              }
+            }
+          }
+        }
+  
+        .box-thanks-note {
+          padding: 60px 165px 114px 143px;
+          img {
+            display: block;
+            width: 165px;
+            height: 156px;
+            margin: 0 auto 61px;
+          }
+          .content {
+            color: #003D4C;
+            font-family: OpenSans;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            p {
+              strong {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 28px;
+              }
+            }
+          }
+        }
+      }
+  
+      .modal-footer {
+        justify-content: center;
+        padding: 33px 0 32px;
+  
+        .btn {
+          height: 48px;
+          border-radius: 24px;
+          padding: 0 48px;
+          margin: 0;
+  
+          &.btn-green-border {
+            margin-right: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .modal-dialog {
+    &.modal-contact-us {
+      max-width: 565px;
+      .modal-content {
+        .modal-header {
+          padding: 26px 30px 29px;
+          .modal-title {
+            font-size: 24px;
+            line-height: 29px;
+          }
+        }
+        .modal-body {
+          .box-form {
+            padding: 39px 46px 40px 50px;
+          }
+          .box-thanks-note {
+            padding: 67px 131px 107px 130px;
+            .groups {
+              .content {
+                p {
+                  strong {
+                    margin-bottom: 26px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .modal-dialog {
+    &.modal-contact-us {
+      max-width: 100%;
+      margin: 0;
+      .modal-content {
+        border-radius: 0;
+        .modal-header {
+          padding: 20px 19px 20px 24px;
+          .modal-title {
+            line-height: 14px;
+          }
+          .btn-close {
+            width: 12px;
+            height: 12px;
+          }
+        }
+        .modal-body {
+          .box-form {
+            padding: 25px 24px 85px;
+            .data-row {
+              margin-top: 41px;
+              &.radio-row {
+                margin-top: 38px;
+              }
+              .check-choose {
+                margin-top: 13px;
+                padding-bottom: 16px;
+              }
+            }
+          }
+          .box-thanks-note {
+            display: flex;
+            align-items: center;
+            height: calc(100vh - 156px);
+            padding: 0 52px;
+            img {
+              width: 127px;
+              height: 120px;
+              margin-bottom: 30px;
+            }
+            .content {
+              p {
+                font-size: 16px;
+                strong {
+                  margin-bottom: 26px;
+                }
+              }
+            }
+          }
+        }
+        .modal-footer {
+          flex-direction: column-reverse;
+          padding: 24px;
+          .btn {
+            width: 100%;
+            &.btn-green-border {
+              margin-right: 0;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

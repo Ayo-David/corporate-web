@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="703px" height="529px" viewBox="0 0 703 529" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M702.334117,0.0101585259 L702.334117,528.010159 L10.8217329,528.004147 C82.0325812,331.131473 55.516938,147.544263 0.000377955007,0.00100446815 L702.334117,0.0101585259 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="13.-Sections/A.-CW/1.-Hero/Option-1" transform="translate(-737.000000, 1.000000)">
+            <g id="Mask-1" transform="translate(737.665883, -0.010159)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#000000" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

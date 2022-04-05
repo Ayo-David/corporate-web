@@ -1,0 +1,197 @@
+// .section-thank-you-for-reaching-us-modal
+.section-thank-you-for-reaching-us-modal {
+    &.modal-default {
+        .modal-main {
+            width: 1115px;
+            height: 704px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .modal-top {
+            border: 0;
+            padding: 40px;
+            .left-txt {
+                padding-top: 20px;
+                font-size: 32px;
+                font-weight: 500;
+                color: #001F26;
+                max-width: 260px;
+                line-height: 35px;
+            }
+        }
+	    // .modal-inner
+        .modal-inner {
+            padding: 0 40px;
+            .txt-area {
+                text-align: left;
+                margin-bottom: 15px;
+                strong {
+                    color: #001F26;
+                    font-family: OpenSans;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    padding-right: 50px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #001F26;
+                    margin-bottom: 15px;
+                }
+            }
+            .right-img {
+                max-width: 400px;
+                margin-left: auto;
+                margin-top: -90px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .bottom-btn {
+            border: 0;
+            justify-content: flex-start;
+            padding: 20px 40px 60px;
+            position: absolute;
+            bottom: 20px;
+            .btn {
+                margin-left: 0;
+                margin-right: 30px;
+                min-width: 140px;
+            }
+        }
+    }
+    .modal-main {
+        .modal-inner {
+            text-align: center;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1130px width */
+@media (max-width: 1130px) {
+    .section-thank-you-for-reaching-us-modal {
+        &.modal-default {
+            .modal-main {
+                width: 704px;
+                height: 667px;
+                padding-left: 0;
+                padding-top: 0;
+            }
+            .modal-top {
+                padding: 49px 30px 23px 30px;
+                .left-txt {
+                    padding-top: 10px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+	        // .modal-inner
+            .modal-inner {
+                padding: 0 28px;
+                .txt-area {
+                    margin-right: 15px;
+                    strong {
+                        padding-right: 0;
+                        margin-right: -70px;
+                        display: block;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    p {
+                        &:last-child {
+                            margin-right: -90px;
+                        }
+                    }
+                }
+                .rights {
+                    display: flex;
+                    align-content: center;
+                    margin-left: 0;
+                }
+                .right-img {
+                    max-width: 286px;
+                    margin-top: 80px;
+                    margin-right: -25px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .bottom-btn {
+                bottom: -30px;
+            }
+        }
+        .bold-txt {
+            font-size: 20px;
+            line-height: 24px;
+            padding-right: 0;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-thank-you-for-reaching-us-modal {
+        .txt {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &.modal-default {
+            .modal-top {
+                padding: 20px 24px;
+                border-bottom: 1px solid #DDE1E6;
+                .left-txt {
+                    max-width: none;
+                    padding-top: 0;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                .btn-close {
+                    margin: 0;
+                }
+            }
+            .modal-main {
+                padding: 0;
+                height: auto;
+		        // .modal-inner
+                .modal-inner {
+                    padding: 24px 25px;
+                    .txt-area {
+                        strong {
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin-bottom: 15px;
+                            padding: 0;
+                            margin-right: 0;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                        p {
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .right-img {
+                        margin: 180px auto 70px;
+                        width: 160px;
+                    }
+                }
+            }
+            .bottom-btn {
+                border-top: 1px solid #DDE1E6;
+                padding: 25px;
+                bottom: 0;
+                position: relative;
+                .btn {
+                    min-width: 322px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

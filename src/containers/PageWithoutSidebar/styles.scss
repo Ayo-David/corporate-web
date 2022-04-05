@@ -1,0 +1,45 @@
+.container {
+  &.container-page-without-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 0 162px 95px;
+    .modified-date {
+      color: #767676;
+      opacity: 0.75;
+      text-transform: uppercase;
+      font-family: GothamRounded;
+      font-weight: 500;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    &.container-page-without-sidebar {
+      padding: 0 30px;
+      .modified-date {
+        padding-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    &.container-page-without-sidebar {
+      padding: 0 30px;
+      .modified-date {
+        padding-bottom: 16px;
+        font-size: 14px;
+      }
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

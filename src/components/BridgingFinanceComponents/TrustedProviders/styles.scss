@@ -1,0 +1,222 @@
+// .section-bridging-finance-trusted-providers
+.section-bridging-finance-trusted-providers {
+	background-color: #f9f9f9;
+	margin-bottom: 80px;
+	padding: 72px 65px;
+	&.private-banking {
+		padding: 66px 0 71px;
+	}
+	&.no-margin-bottom {
+	    margin-bottom: 0;
+	}
+    .title {
+		color: #767676;
+		font-family: "GothamRounded";
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 22px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 48px;
+    }
+    .flex-space {
+    	display: flex;
+    	justify-content: space-between;	
+    }
+    .section {
+		flex: 1;
+		margin: 0 66.5px;
+		.content-container {
+			h3 {
+				color: #001f26;
+				font-family: "GothamRounded";
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 28px;
+			}
+			p {
+				color: #003D4C;
+				line-height: 21px;
+			}
+		}
+		.icon-img {
+			height: 72px;
+			margin-bottom: 18px;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				width: auto;
+			}
+		}
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1280px) {
+    .section-bridging-finance-trusted-providers {
+			&.private-banking {
+				padding: 66px 28px 71px;
+				.container {
+					padding: 0;
+				}
+			}
+        .section {
+			margin: 0 30px;
+		}
+    }
+}
+@media (max-width: 1023px) {
+    .section-bridging-finance-trusted-providers {
+		padding: 30px 30px;
+			&.private-banking {
+				padding: 26px 51px 31px;
+				.container {
+					padding: 0;
+				}
+				.section {
+					margin: 0;
+					padding-right: 42px;
+					&:nth-child(1) {
+						flex: 1 1 201px;
+						max-width: 201px;
+					}
+					&:nth-child(2) {
+						flex: 1 1 162px;
+						max-width: 162px;
+					}
+					&:nth-child(3) {
+						flex: 1 1 217px;
+						max-width: 217px;
+					}
+					.content-container {
+						h3 {
+							font-size: 16px;
+							line-height: 19px;
+							margin-bottom: 19px;
+						}
+						p {
+							font-size: 12px;
+							line-height: 14px;
+						}
+					}
+					.icon-img {
+						width: 44px;
+						height: 48px;
+						margin-bottom: 18px;
+		
+						img {
+							height: 100%;
+						}
+					}
+				}
+			}
+	    .title {		
+				font-size: 14px;	
+				margin-bottom: 25px;
+	    }
+    	.section {
+			margin: 0 20px;
+			.icon-img {
+				width: 35px;
+				height: 45px;
+				margin-bottom: 15px;
+				img {
+					height: 100%;
+				}
+			}
+    	}
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-bridging-finance-trusted-providers {
+      padding: 40px 20px 5px 10px;
+			margin-bottom: 40px;
+			&.no-margin-bottom {
+	        margin-bottom: 0;
+	        .section {
+	            .icon-img {
+	                margin: initial;
+	            }
+	        }
+	        .content-container {
+                text-align: initial;
+            }
+	    }
+			&.private-banking {
+				padding: 56px 30px 56px;
+				margin-top: 24px;
+				.content-container {
+					padding-right: 5px;
+				}
+		
+				.title {
+					margin-bottom: 20px;
+				}
+				.flex-space {
+					display: block;
+				}
+		
+				.section {
+					margin: 0 0 55px;
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3) {
+						flex: 1 1 100%;
+						max-width: 100%;
+					}
+					&:last-child {
+						margin: 0;
+					}
+		
+					.content-container {
+						h3 {
+							font-size: 22px;
+							line-height: 30px;
+							margin-bottom: 13px;
+						}
+						p {
+							line-height: 24px;
+						}
+					}
+		
+					.icon-img {
+						width: 60px;
+						height: 71px;
+						margin-bottom: 18px;
+		
+						img {
+							height: auto;
+						}
+					}
+				}
+			}
+		.content-container {
+			text-align: center;
+		}
+	    .title {			
+			margin-bottom: 40px;
+	    }
+	    .flex-space {
+	    	display: block;
+	    }
+    	.section {
+			margin: 0 0 40px;
+			.content-container {
+				h3 {
+					font-size: 22px;
+					margin-bottom: 24px;
+				}
+			}
+			.icon-img {
+				width: 60px;
+				height: 78px;
+				margin: 15px auto 22px;
+				img {
+					height: auto;
+				}
+			}
+    	}
+    }
+}

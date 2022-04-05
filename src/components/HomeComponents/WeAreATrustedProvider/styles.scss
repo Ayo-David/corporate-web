@@ -1,0 +1,100 @@
+// .section-we-are-a-trusted-provider
+.section-we-are-a-trusted-provider {
+    background-color: #f9f9f9;
+    padding: 99px 0 100px;
+    .gray-title {
+        color: #767676;
+        font-family: GothamRounded;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+        font-weight: 500;
+        &.center {
+            text-align: center;
+        }
+    }
+    .logos-list {
+        ul {
+            justify-content: space-evenly;
+            .logo {
+                img {
+                    display: block;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    // .section-we-are-a-trusted-provider
+    .section-we-are-a-trusted-provider {
+        padding: 30px 0 40px;
+        .logos-list {
+            ul {
+                .logo {
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-we-are-a-trusted-provider {
+        padding: 60px 0 30px;
+        .logos-list {
+            ul {
+                padding: 0 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    margin-bottom: 30px;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    &:nth-child(2) {
+                        .logo {
+                            img {
+                                width: 60px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .logo {
+                            img {
+                                width: 58px;
+                            }
+                        }
+                    }
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        .logo {
+                            img {
+                                width: 48px;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        .logo {
+                            img {
+                                width: 58px;
+                            }
+                        }
+                    }
+                }
+                .logo {
+                    img {
+                        width: 66px;
+                    }
+                }
+            }
+        }
+    }
+}

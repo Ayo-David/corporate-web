@@ -1,0 +1,225 @@
+.container {
+  &.deals-page {
+    padding: 0 130px;
+  }
+}
+/* fix layout issue when smaller than 1280px width */
+@media (max-width: 1300px) {
+  .container {
+    &.deals-page {
+      padding: 0 65px;
+    }
+  }
+}
+/* fix layout issue when smaller than 1280px width */
+@media (max-width: 1023px) {
+  .container {
+    &.deals-page {
+      padding: 0 32px;
+      .section {
+        &.section-title-deal-section {
+          .detail {
+            p {
+              &:first-of-type,
+              &:last-of-type {
+                font-size: 16px;
+              }
+            }
+            h2 {
+              font-size: 32px;
+            }
+          }
+        }
+        &.paragraph--description,
+        &.paragraph--image_with_long_text,
+        &.paragraph--title_with_multiple_text_area,
+        &.section-title-deal-section {
+          margin: 30px 0;
+          .category {
+            margin: 40px 0;
+          }
+          .description {
+            p {
+              font-size: 14px;
+            }
+          }
+          .field_text_container {
+            .left {
+              margin-right: 35px;
+              img {
+                max-height: 100%;
+              }
+            }
+            .right > ul > li {
+              font-size: 14px;
+              margin-bottom: 0;
+            }
+          }
+          .text-area-container {
+            .text-area {
+              &:first-of-type {
+                margin-right: 35px;
+              }
+              .detail > blockquote > p {
+                font-size: 16px;
+                line-height: 27px;
+              }
+              .detail > p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.case-studies {
+      .section-title {
+        margin: 40px 0 !important;
+      }
+      .case-study-container {
+        .case-study {
+          flex-grow: 1;
+          .image-holder {
+            img {
+              max-height: 320px;
+            }
+          }
+          &:last-of-type {
+            display: none;
+          }
+          .deal-title {
+            h2 {
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section.paragraph--title_description .section-legal {
+    margin: 0 52px !important;
+    .legal-information {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .section.paragraph--title_description {
+    margin: 30px 0 !important;
+    padding: 30px 0 !important;
+    .section-legal {
+      .category {
+        margin: 20px 0 !important;
+      }
+    }
+  }
+  .section {
+    &.section-top-banner-carousel {
+      &.show-thumbnails {
+        .thumbnail-list {
+          .thumbnail-container {
+            flex-grow: 1;
+            width: 153px;
+            .thumbnail {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    &.deals-page {
+      .section {
+        &.paragraph--image_with_long_text {
+          .field_text_container {
+            flex-direction: column;
+            .left,
+            .right {
+              width: 100%;
+            }
+            .right {
+              margin: 20px 0;
+              ul > li {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        &.paragraph--title_with_multiple_text_area {
+          .text-area-container {
+            flex-direction: column;
+            .text-area {
+              width: 100%;
+              margin: 0;
+              margin-bottom: 20px;
+              .detail {
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        &.paragraph--description {
+          .description {
+            flex-direction: column;
+            p {
+              width: 100%;
+              img {
+                object-fit: cover;
+                width: 50%;
+                margin-right: 10px;
+              }
+              &:last-of-type {
+                margin: 0;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.case-studies {
+      .case-study-container {
+        flex-direction: column;
+        .case-study {
+          display: initial !important;
+          width: 100%;
+          margin-bottom: 10px;
+          .image-holder {
+            img {
+              max-height: 120px;
+              border-top-left-radius: 9px;
+            }
+          }
+          .deal-title {
+            height: initial;
+            justify-content: flex-start;
+            padding: 18px;
+            border-bottom-right-radius: 9px;
+            h2 {
+              text-overflow: ellipsis;
+              overflow: hidden;
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section {
+    &.paragraph--title_description {
+      .section-legal {
+        margin: 0 32px !important;
+        .legal-information {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+// .section-private-banking-borrowing-our-clients
+.section-private-banking-borrowing-our-clients {
+    margin-bottom: 50px;
+    .gray-title {
+        padding: 40px 20px;
+        color: #767676;
+        font-family: GothamRounded;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    // .client-area
+    .client-area {
+        display: flex;
+        padding: 0 217px 50px;
+        align-content: stretch;
+        .left-tabs {
+            flex: 0 0 267px;
+            max-width: 267px;
+            .tab-items {
+                display: block;
+                text-align: right;
+                padding: 16px 25px;
+                color: #003D4C;
+                font-family: OpenSans;
+                font-size: 16px;
+                line-height: 22px;
+                &.current {
+                    font-weight: bold;
+                    background-color: #F9F9F9;
+                    box-shadow: 5px 0 0 #00D1B6 inset;
+                }
+            }
+        }
+        .right-content {
+            .tab-content {
+                background-color: #F9F9F9;
+                padding: 16px 40px;
+                height: 100%;
+                box-shadow: -5px 0 0 #00D1B6 inset;
+                p {
+                    color: #001F26;
+                    font-family: OpenSans;
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .bottom-btn {
+        padding: 0 30px 60px;
+        text-align: center;
+        .btn {
+            min-width: 209px;
+        }
+    }
+    .mobile-client-area {
+        display: none;
+    }
+}
+
+/* fix layout issue when smaller than 1130px width */
+@media (max-width: 1130px) {
+    .section-private-banking-borrowing-our-clients {
+        .client-area {
+            padding: 0 0 50px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-private-banking-borrowing-our-clients {
+        .gray-title {
+            font-size: 14px;
+        }
+        // .client-area
+        .client-area {
+            padding: 0 0 50px;
+            .left-tabs {
+                flex: 0 0 212px;
+                max-width: 212px;
+                .tab-items {
+                    padding: 16px;
+                    font-size: 14px;
+                }
+            }
+            .right-content {
+                .tab-content {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-private-banking-borrowing-our-clients {
+        margin-bottom: 0;
+        .client-area {
+            display: none;
+        }
+	    // .mobile-client-area
+        .mobile-client-area {
+            display: block;
+            padding-bottom: 20px;
+            .client-groups {
+                &.open {
+                    margin-bottom: 15px;
+                    background-color: #f9f9f9;
+                    box-shadow: 3px 0 0 #00D1B6 inset;
+                    .title-bar {
+                        .title {
+                            font-weight: bold;
+                        }
+                        .btn-expand {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                    .expand-panel {
+                        display: block;
+                    }
+                }
+                .title-bar {
+                    padding: 20px 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    .title {
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #003D4C;
+                    }
+                    .btn-expand {
+                        background: url(/assets/chevron-bottom.svg) center center no-repeat;
+                        background-size: 12px 8px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                .expand-panel {
+                    display: none;
+                    padding: 5px 25px;
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-weight: 600;
+                        color: #001F26;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .bottom-btn {
+            padding: 0 0 40px;
+            .btn {
+                min-width: 327px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+// .footer
+.footer {
+	overflow: hidden;
+}
+.article-detail-mains {
+	display: flex;
+	padding-top: 0;
+	padding-bottom: 90px;
+}
+
+@media (max-width: 1279px) {
+	.article-detail-mains {
+		.row {
+			flex-direction: column;
+			margin-left: 32px;
+			margin-right: 32px;
+			.col {
+				max-width: initial;
+			}
+		}
+	}
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+	.article-detail-mains {
+		flex-direction: column;
+	}
+}

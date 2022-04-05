@@ -1,0 +1,104 @@
+// .footer
+.footer {
+  overflow: hidden;
+}
+
+.about-us-ethics-values-content {
+  .section-image-with-long-text {
+    padding-bottom: 50px;
+    .gray-title,
+    .gray-title-mobile {
+      font-size: 24px;
+      color: #001f26;
+      line-height: 1.5;
+      text-transform: initial;
+    }
+    .group-module {
+      .content {
+        h3 {
+          font-size: 24px;
+          color: #001f26;
+          font-weight: 500;
+          margin-bottom: -15px;
+        }
+        ul {
+          li {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+  .section-our-customer-promise {
+    margin-bottom: 50px;
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .about-us-ethics-values-content {
+    .section-image-with-long-text {
+      .gray-title,
+      .gray-title-mobile {
+        font-size: 24px;
+      }
+      .group-module {
+        .content {
+          h3 {
+            font-size: 16px;
+          }
+          ul {
+            li {
+              font-size: 14px;
+              line-height: 22px;
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .img-box {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .about-us-ethics-values-content {
+    .section-image-with-long-text {
+      .gray-title,
+      .gray-title-mobile {
+        &.center {
+          text-align: left;
+        }
+      }
+      .group-module {
+        .img-box {
+          height: auto;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .about-us-ethics-values-content {
+    .section-image-with-long-text {
+      .group-module {
+        .content {
+          ul {
+            li {
+              font-size: 18px;
+              line-height: 28px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+// .section-top-info
+.section-top-info {
+    .red-bar,
+    .blue-bar {
+        position: relative;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .red-bar {
+        background-color: #D34343;
+    }
+    .blue-bar {
+        background-color: #006A8E;
+    }
+    .white-txt {
+        color: #FFFFFF;
+        font-family: GothamRounded;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        .line-txt {
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+    .btn-close {
+        position: absolute;
+        right: 60px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(/assets/close.png) center center no-repeat;
+        background-size: 18px 18px;
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 1024px) {
+    // .section-top-info
+    .section-top-info {
+        .red-bar,
+        .blue-bar {
+            min-height: 40px;
+            padding: 15px 45px 15px 10px;
+            height: auto;
+            display: flex;
+        }
+        .white-txt {
+            font-size: 14px;
+        }
+        .btn-close {
+            right: 15px;
+            top: 20px;
+        }
+    }
+}

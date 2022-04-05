@@ -1,0 +1,170 @@
+.section-cards-with-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #cef6f0;
+  padding: 67px 0 61px;
+  position: relative;
+
+  .container {
+    padding: 0 375px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    display: block;
+    color: #001f26;
+    font-family: GothamRounded;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 37px;
+    text-align: center;
+  }
+
+  .list-card {
+    display: flex;
+    justify-content: space-between;
+
+    .item-card {
+      max-width: 333px;
+      margin-right: 118px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .txt {
+        font-family: GothamRounded;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 36px;
+        text-align: center;
+      }
+
+      .bottom-btn {
+        display: flex;
+        justify-content: center;
+
+        .btn-black {
+          min-width: 220px;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .section-cards-with-link {
+    padding: 45px 0 40px;
+
+    .container {
+      padding: 0 220px;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 18px;
+    }
+
+    .list-card {
+      .item-card {
+        max-width: 312px;
+        margin-right: 55px;
+
+        .txt {
+          font-size: 18px;
+          margin-bottom: 29px;
+        }
+
+        .bottom-btn {
+          .btn-black {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .section-cards-with-link {
+    padding: 45px 0 40px;
+
+    .container {
+      padding: 0 75px;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 18px;
+    }
+
+    .list-card {
+      .item-card {
+        max-width: 312px;
+        margin-right: 55px;
+
+        .txt {
+          font-size: 18px;
+          margin-bottom: 29px;
+        }
+
+        .bottom-btn {
+          .btn-black {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-cards-with-link {
+    padding: 45px 0 54px;
+
+    .container {
+      padding: 0 30px;
+    }
+
+    h2 {
+      font-size: 33px;
+      line-height: 38px;
+      margin-bottom: 35px;
+    }
+
+    .list-card {
+      display: block;
+      width: 100%;
+
+      .item-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        .txt {
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
+
+        .btn-black {
+          width: 199px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

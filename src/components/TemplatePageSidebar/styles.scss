@@ -1,0 +1,99 @@
+// .template-page-sidebar
+.template-page-sidebar {
+  flex: 0 0 312px;
+  max-width: 312px;
+
+  .sidebar-list {
+    .sidebar-list-item {
+      margin-bottom: 8px;
+
+      &.active {
+        a {
+          background-color: #cef6f0;
+        }
+      }
+
+      a {
+        display: block;
+        min-height: 43px;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        font-family: OpenSans;
+        font-size: 14px;
+        color: #003D4C;
+        line-height: 16px;
+        font-weight: 700;
+        padding: 12px;
+
+        &.disabled {
+          color: rgba(#003D4C, 0.25);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .dropdown{
+    display: none;
+    margin-bottom: 32px;
+    .dropdown-toggle{
+      width: 100%;
+      min-height: 50px;
+      border-radius: 2px;
+      border: 1px solid #003D4C;
+      background-color: transparent;
+      text-align: left;
+      color: #003d4c;
+      font-family: "OpenSans";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      padding: 16px 20px 16px 15px;
+      white-space: break-spaces;
+      display: flex;
+      align-items: center;
+      &::after{
+        position: absolute;
+        right: 15px;
+        top: 17px;
+        width: 14px;
+        height: 14px;
+        border: none;
+        background: url('/assets/chevron-bottom.svg') no-repeat 50% 50%;
+        background-size: 14px 14px;
+      }
+    }
+    .dropdown-menu {
+      width: 100%;
+      .dropdown-item {
+        white-space: break-spaces;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .template-page-sidebar {
+    flex: 0 0 100%;
+    max-width: 100%;
+    .sidebar-list {
+      display: none;
+    }
+    .dropdown {
+      display: block;
+      margin: 32px 0;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .template-page-sidebar {
+    .sidebar-list {
+      display: none;
+    }
+    .dropdown {
+      margin-top: 0;
+    }
+  }
+}

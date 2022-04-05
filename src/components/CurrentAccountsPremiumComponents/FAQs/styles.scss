@@ -1,0 +1,128 @@
+.section-current-accounts-faqs {
+  width: 100%;
+  padding: 58px 277px 72px;
+  position: relative;
+
+  .container {
+    padding: 0;
+  }
+
+  h2 {
+    font-family: 'GothamRounded';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #003D4C;
+    text-align: center;
+  }
+
+  .list-faq {
+    margin: 40px 0;
+
+    .item-current-accounts-faq {
+      margin-bottom: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .bottom-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+  .section-current-accounts-faqs {
+    padding: 69px 100px 60px 99px;
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .list-faq {
+      margin: 28px 0 30px;
+
+      .item-current-accounts-faq {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .section-current-accounts-faqs {
+    padding: 69px 98px 60px 98px;
+
+    &.about-us-faqs {
+      .bottom-btn {
+        .btn-green-border {
+          min-width: 200px;
+        }
+      }
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .list-faq {
+      margin: 28px 0 30px;
+
+      .item-current-accounts-faq {
+        margin-bottom: 30px;
+      }
+    }
+
+    .bottom-btn {
+      .btn-green-border {
+        min-width: 284px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-current-accounts-faqs {
+    padding: 44px 0;
+
+    &.about-us-faqs {
+      padding-top: 0;
+
+      .bottom-btn {
+        .btn-green-border {
+          min-width: calc(100% - 30px);
+        }
+      }
+    }
+
+    .container {
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 38px;
+      font-weight: 400;
+    }
+
+    .list-faq {
+      margin: 28px 0 30px;
+
+      .item-current-accounts-faq {
+        margin-bottom: 30px;
+      }
+    }
+
+    .bottom-btn {
+      .btn-green-border {
+        min-width: calc(100% - 30px);
+      }
+    }
+  }
+}

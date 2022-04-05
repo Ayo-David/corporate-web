@@ -1,0 +1,318 @@
+// .section-mortgage-calculator-step-1-box
+.section-mortgage-calculator-step-1-box {
+    background-color: #fff;
+    padding: 0 162px 60px;
+    max-width: 1440px;
+    margin: 0 auto;
+    .container {
+        padding-left: 0;
+        .row {
+            .col-md-5 {
+                padding-left: 0;
+            }
+        }
+    }
+    .left-area {
+        margin-right: 33px;
+        .sub-title {
+            color: #767676;
+            font-family: "GothamRounded";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+        .content-area {
+            h1 {
+                color: #001f26;
+                font-family: "GothamRounded";
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 60px;
+                margin-bottom: 90px;
+            }
+            p {
+                color: #001f26;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .right-area {
+        padding-top: 34px;
+        .form-box {
+            .data-row {
+                margin-bottom: 37px;
+                .label-txt {
+                    color: #003d4c;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                    line-height: 20px;
+                    .btn-question {
+                        float: right;
+                        width: 20px;
+                        height: 20px;
+                        background: url(/assets/icon-question.svg) center center no-repeat;
+                        background-size: 20px;
+                    }
+                }
+                .check-choose {
+                    display: flex;
+                    .radio-wrap {
+                        margin-right: 20px;
+                    }
+                }
+                .bottom-info-txt {
+                    color: #003d4c;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    margin-top: 8px;
+                }
+            }
+        }
+        .bottom-btn {
+            display: flex;
+            justify-content: flex-end;
+            padding: 30px 0 24px;
+            .btn-green {
+                border-radius: 24px;
+                line-height: 48px;
+                height: 48px;
+                padding: 0 48px;
+                font-size: 16px;
+            }
+        }
+        .how-much-box {
+            padding: 20px 0 0;
+            .top-title {
+                color: #001f26;
+                font-family: "GothamRounded";
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-bottom: 24px;
+            }
+            .your-anual-area {
+                .your-anual-title {
+                    color: #003d4c;
+                    font-family: "GothamRounded";
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 21px;
+                    text-transform: uppercase;
+                }
+            }
+            .your-monthly-area {
+                padding: 10px 0 0;
+                .your-monthly-title {
+                    color: #767676;
+                    line-height: 22px;
+                    font-family: "GothamRounded";
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+    }
+    .inputs {
+        border-radius: 2px;
+        border: 1px solid #003d4c;
+        height: 50px;
+        position: relative;
+        .icon-price {
+            background: url(/assets/icon-price-left.svg) no-repeat;
+            width: 10px;
+            height: 10px;
+            background-size: auto;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            margin-top: -5px;
+        }
+        input {
+            font-size: 14px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 10px 15px;
+            outline: none;
+            color: #333;
+            &.isPrice {
+                padding-left: 35px;
+            }
+            &::-webkit-input-placeholder {
+                color: #7f9ea5;
+            }
+            &:-moz-placeholder {
+                color: #7f9ea5;
+            }
+            &::-moz-placeholder {
+                color: #7f9ea5;
+            }
+            &:-ms-input-placeholder {
+                color: #7f9ea5;
+            }
+        }
+    }
+    .dropdown{
+      margin-bottom: 31px;
+      .dropdown-toggle{
+        width: 100%;
+        height: 50px;
+        color: #333;
+        border-radius: 0;
+        border: 1px solid #003D4C;
+        background-color: transparent;
+        text-align: left;
+        font-size: 14px;
+        font-family: OpenSans;
+        font-weight: 400;
+        padding: 0 15px;
+        &.gray-txt {
+          color: #b8c4c6;
+        }
+        &::after{
+          position: absolute;
+          right: 15px;
+          top: 17px;
+          width: 14px;
+          height: 14px;
+          border: none;
+          background: url('/assets/chevron-bottom.svg') no-repeat 50% 50%;
+          background-size: 14px 14px;
+        }
+      }
+      .dropdown-menu{
+        width: 100%;
+      }
+    }
+}
+
+/* fix layout issue when smaller than 1200px width */
+@media (max-width: 1200px) {
+    .section-mortgage-calculator-step-1-box {
+        padding: 10px 65px 0;
+        .container {
+            padding: 0 16px;
+            .col-md-7,
+            .col-md-5 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .col-md-7 {
+                padding: 0;
+            }
+        }
+        .left-area {
+            .sub-title {
+                margin-bottom: 23px;
+                text-align: center;
+                font-size: 14px;
+            }
+            .content-area {
+                h1 {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            .content-area {
+                h1 {
+                    font-size: 35px;
+                    line-height: 38px;
+                    margin-bottom: 25px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .right-area {
+            padding-top: 0;
+            .form-box {
+                .data-row {
+                    margin-bottom: 25px;
+                    .bottom-info-txt {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .bottom-btn {
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: 1024px) {
+    .section-mortgage-calculator-step-1-box {
+        padding: 10px 32px 0;
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-mortgage-calculator-step-1-box {
+        padding: 10px 30px 10px;
+        .left-area {
+            margin-right: 0;
+            .sub-title {
+                font-size: 14px;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            .content-area {
+                h1 {
+                    font-size: 32px;
+                    line-height: 38px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        .right-area {
+            .form-box {
+                .data-row {
+                    margin-bottom: 5px;
+                    .check-choose {
+                        margin-bottom: 24px;
+                    }
+                    .col {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .how-much-box {
+                .your-anual-area {
+                    .your-anual-title {
+                        font-size: 18px;
+                        margin-bottom: 25px;
+                    }
+                }
+                .your-monthly-area {
+                    .your-monthly-title {
+                        font-size: 18px;
+                        margin-bottom: 22px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .bottom-btn {
+                padding: 0;
+                display: block;
+                .btn-green {
+                    min-width: 327px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

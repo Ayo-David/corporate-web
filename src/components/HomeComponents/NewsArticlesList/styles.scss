@@ -1,0 +1,265 @@
+// .section-news-and-articles
+.section-news-and-articles {
+    padding-top: 71px;
+    padding-bottom: 10px;
+    .top-title {
+        color: #767676;
+        font-family: GothamRounded;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .container {
+        padding: 0;
+        margin: 0 auto 20px;
+        .row {
+            margin: 0 -10px;
+            .col {
+                padding: 0 10px;
+            }
+        }
+    }
+    .articles-list {
+        &>*:first-child {
+            background-color: #003D4C;
+            color: white;
+            .icon-circle-arrow-right {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM14.8477 28.6359C14.3173 27.9994 14.4033 27.0536 15.0397 26.5232L22.6555 20.1756L15.0397 13.8279L14.9027 13.6985C14.3937 13.1539 14.3581 12.3028 14.8477 11.7153C15.378 11.0789 16.3239 10.9929 16.9603 11.5232L25.9603 19.0232L26.0946 19.1496C26.6767 19.7681 26.632 20.7682 25.9603 21.3279L16.9603 28.8279L16.8083 28.9394C16.1808 29.3418 15.3372 29.2233 14.8477 28.6359Z' fill='%23FFFFFF'/%3E%3C/svg%3E")!important;
+            }
+            .left-txt {
+                color: white;
+            }
+        }
+        &>*:nth-child(2) {
+            background-color: #00D1B6;
+            color: #001f26;
+            .left-txt {
+                color: #003D4C;
+            }
+        }
+        &>*:nth-child(3) {
+            background-color: #00A792;
+            color: white;
+            .icon-circle-arrow-right {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM14.8477 28.6359C14.3173 27.9994 14.4033 27.0536 15.0397 26.5232L22.6555 20.1756L15.0397 13.8279L14.9027 13.6985C14.3937 13.1539 14.3581 12.3028 14.8477 11.7153C15.378 11.0789 16.3239 10.9929 16.9603 11.5232L25.9603 19.0232L26.0946 19.1496C26.6767 19.7681 26.632 20.7682 25.9603 21.3279L16.9603 28.8279L16.8083 28.9394C16.1808 29.3418 15.3372 29.2233 14.8477 28.6359Z' fill='%23FFFFFF'/%3E%3C/svg%3E")!important;
+            }
+            .left-txt {
+                color: white;
+            }
+        }
+        &>*:nth-child(4) {
+            background-color: #D6DBDC;
+            color: #001f26;
+            .left-txt {
+                color: #003D4C;
+            }
+        }
+    }
+    .articles-list-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 32px;
+        grid-template-areas: 
+            "one two three"
+            "one four three";
+        &>*:first-child {
+            grid-area: one;
+        }
+        &>*:nth-child(2) {
+            grid-area: two;
+        }
+        &>*:nth-child(3) {
+            grid-area: three;
+        }
+        &>*:nth-child(4) {
+            grid-area: four;
+        }
+    }
+    .articles-list-flex {
+        display: flex;
+        align-items: stretch;
+        gap: 32px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & > * {
+            min-width: 327px;
+        }
+    }
+    .general-content {
+        box-shadow: 0 10px 16px rgba(184, 196, 198, 0.82);
+        border-radius: 20px;
+        background-color: #e6eaeb;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        padding: 27px 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        h3 {
+            font-family: GothamRounded;
+            font-size: 32px;
+            line-height: 38px;
+            max-width: 521px;
+            text-align: left;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow : hidden; 
+            word-break: break-word;
+        }
+        .greneral-content-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icons {
+                display: block;
+            }
+            .icon-circle-arrow-right {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM14.8477 28.6359C14.3173 27.9994 14.4033 27.0536 15.0397 26.5232L22.6555 20.1756L15.0397 13.8279L14.9027 13.6985C14.3937 13.1539 14.3581 12.3028 14.8477 11.7153C15.378 11.0789 16.3239 10.9929 16.9603 11.5232L25.9603 19.0232L26.0946 19.1496C26.6767 19.7681 26.632 20.7682 25.9603 21.3279L16.9603 28.8279L16.8083 28.9394C16.1808 29.3418 15.3372 29.2233 14.8477 28.6359Z' fill='%23001F26'/%3E%3C/svg%3E");
+                width: 40px;
+                height: 40px;
+                background-size: 40px 40px;
+            }
+            .left-txt {
+                font-family: OpenSans;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 700;
+            }
+        }
+        .top-photo {
+            height: 290px;
+            overflow: hidden;
+            img {
+                width: 102%;
+                height: 111%;
+                margin-top: -5px;
+                margin-left: -1px;
+            }
+        }
+        .bottom-photo {
+            height: 290px;
+            overflow: hidden;
+            img {
+                width: 111%;
+                height: 111%;
+                margin-left: -20px;
+                margin-top: -5px;
+            }
+        }
+    }
+    .general-middle-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .general-content {
+            flex: 1;
+            min-height: auto;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .bottom-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 39px 0 71px;
+    }
+}
+
+
+/* fix layout issue when smaller than 1550px width */
+@media (max-width: 1550px) {
+	.section-news-and-articles {
+        .container {
+            padding: 0 32px;
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+	.section-news-and-articles {
+        .articles-list-grid {
+            grid-template-rows: 2fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "one two"
+                "three four";
+            &>*:first-child {
+                grid-area: one;
+            }
+            &>*:nth-child(2) {
+                grid-area: two;
+            }
+            &>*:nth-child(3) {
+                grid-area: three;
+            }
+            &>*:nth-child(4) {
+                grid-area: four;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-news-and-articles {
+        padding-bottom: 20px;
+        padding-top: 60px;
+        background-color: #f9f9f9;
+        .bottom-btn {
+            padding-top: 24px;
+            padding-bottom: 40px;
+            width: 100%;
+            .btn-green-border {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+        .container {
+            padding: 0 15px;
+            .row {
+                .col {
+                    flex-direction: column;
+                }
+            }
+        } 
+        .articles-list-grid {
+            grid-template-rows: 2fr 1fr 1fr 2fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "one"
+                "two"
+                "three"
+                "four";
+            &>*:first-child {
+                grid-area: one;
+            }
+            &>*:nth-child(2) {
+                grid-area: two;
+            }
+            &>*:nth-child(3) {
+                grid-area: three;
+            }
+            &>*:nth-child(4) {
+                grid-area: four;
+            }
+        }
+        .general-content {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}

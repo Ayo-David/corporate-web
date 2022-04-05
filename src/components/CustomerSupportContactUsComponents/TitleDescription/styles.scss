@@ -1,0 +1,148 @@
+.section-title-description {
+  padding: 48px 0 40px 0;
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    .left {
+      width: 30%;
+      flex-shrink: 0;
+      .help-option {
+        padding: 13px 25px 13px 10px;
+        text-align: right;
+        cursor: pointer;
+        .txt > * {
+          font-size: 16px;
+        }
+        .txt > img {
+          display: none;
+        }
+        &.active {
+          background: #f9f9f9;
+          border-left: 6px solid #00d1b6;
+          font-weight: 700;
+        }
+      }
+      .mobile-detail {
+        display: none;
+      }
+    }
+    .right {
+      overflow-x: auto;
+      width: 600px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      background: #f9f9f9;
+      padding: 15px 25px;
+      border-right: 6px solid #00d1b6;
+      .field-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      * {
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 19.5px;
+        font-family: OpenSans;
+      }
+      p {
+        font-size: 16px;
+        color: #001f26;
+        * {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .section-title-description {
+    .container {
+      .content {
+        width: 95%;
+        .left {
+          width: 35%;
+          .help-option {
+            font-size: 14px;
+          }
+        }
+        .right {
+          width: 70%;
+          h3,
+          h2 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .section-title-description {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    .container {
+      .content {
+        width: 100%;
+        .left {
+          width: 100%;
+          .help-option {
+            text-align: left;
+            padding: 20px 20px 5px 20px;
+            margin-bottom: 15px;
+            .txt > img {
+              display: block;
+              width: 14px;
+              height: 8px;
+              &.active {
+                transform: rotate(180deg);
+              }
+            }
+            .txt {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 9px;
+              width: auto;
+              font-size: 14px;
+              color: #001f26;
+            }
+            &.active {
+              background: #f9f9f9;
+            }
+          }
+          .mobile-detail {
+            display: block;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            h3,
+            h2 {
+              font-size: 16px;
+              margin-bottom: 15px;
+            }
+            p,
+            p > * {
+              font-size: 14px;
+              font-weight: 400;
+              margin-top: 10px;
+            }
+          }
+        }
+        .right {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,231 @@
+// .section-private-banking-customer-feedback
+.section-private-banking-customer-feedback {
+    position: relative;
+    background: linear-gradient(90deg, #ffffff 70%, #cef6f0 30%);
+    .flex-space {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    .carousel {
+        .carousel-indicators {
+            bottom: 36px;
+            li {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #b8c4c6;
+                margin: 0 4px;
+                opacity: 1;
+                border-radius: 100%;
+                &.active {
+                    background-color: #00d1b6;
+                }
+            }
+        }
+    }
+    .container {
+        padding: 0 163px 0 162px;
+    }
+    .left {
+        width: 50%;
+        padding-right: 131px;
+        .title {
+            margin-bottom: 40px;
+            color: #001f26;
+            font-family: "GothamRounded";
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 60px;
+        }
+        .txt-p {
+            color: #001f26;
+            font-family: "OpenSans";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+    // .right
+    .right {
+        height: 488px;
+        flex: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-image: url(/assets/mask.png);
+        .photo {
+            width: 194px;
+            height: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            transform: translate(0, -50%);
+            position: absolute;
+            top: 50%;
+            left: -97px;
+            z-index: 3;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content {
+            padding-left: 150px;
+            z-index: 3;
+        }
+        .txts {
+            margin-bottom: 30px;
+            p {
+                color: #001f26;
+                font-family: "GothamRounded";
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 30px;
+            }
+        }
+        .author {
+	        p {
+                font-style: italic;
+                color: #001f26;
+                font-family: "OpenSans";
+                font-size: 20px;
+                line-height: 28px;
+	        }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1325px) {
+    .section-private-banking-customer-feedback {
+        .container {
+            padding: 0 58px;
+        }
+        .left {
+            padding-right: 80px;
+            .title {
+                font-size: 32px;
+                line-height: 45px;
+            }
+        }
+        // .right
+        .right {
+            height: 400px;
+            background-size: 100% 400px;
+            .photo {
+                width: 130px;
+                height: auto;
+                left: -65px;
+            }
+            .content {
+                padding-left: 100px;
+            }
+            .txts {
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .author p{
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+@media (max-width: 1023px) {
+    .section-private-banking-customer-feedback {
+        .container {
+            padding: 0 32px;
+        }
+        .left {
+            padding-right: 80px;
+            .title {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            .txt-p {      
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+        // .right
+        .right {
+            height: 380px;
+            background-size: 100% 380px;
+            .photo {
+                width: 109px;
+                height: auto;
+                left: -54.5px;
+            }
+            .content {
+                padding-left: 80px;
+            }
+            .txts {
+                margin-bottom: 18px;
+                p {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-private-banking-customer-feedback {
+        background: transparent;
+        padding: 56px 0;
+        .container {
+            padding: 0;
+        }
+        .flex-space {
+            display: block;
+        }
+        .left {
+            width: auto;
+            padding: 0 24px 68px 24px;
+            .title {
+                font-size: 32px;
+                line-height: 38px;
+                margin-bottom: 24px;
+            }
+            .txt-p {      
+                line-height: 24px;
+            }
+        }
+        // .right
+        .right {
+            height: 357px;
+            display: block;
+            background: url(/assets/mask-mobile.png) no-repeat;
+            .photo {
+                width: 72px;
+                height: auto;
+                margin-top: 0;
+                top: -36px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            .content {
+                padding: 80px 24px 20px 24px;
+                position: relative;
+                z-index: 3;
+            }
+            .txts {
+                margin-bottom: 27px;
+                p {
+                    font-size: 16px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+            .author {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

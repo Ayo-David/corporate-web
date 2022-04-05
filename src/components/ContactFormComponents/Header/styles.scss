@@ -1,0 +1,41 @@
+.contact-container {
+  padding: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  .logo {
+    height: 23.76px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .txt {
+    font-size: 16px;
+    font-family: OpenSans;
+    color: #003d4c;
+  }
+}
+.right {
+  .btn.btn-green {
+    background: #003d4c;
+    color: #ffffff;
+    height: 48px;
+    border-radius: 24px;
+    width: 137px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-container {
+    padding: 21px;
+    align-items: initial;
+    .right .btn.btn-green {
+      height: 28px;
+      font-size: 12px;
+      width: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

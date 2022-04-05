@@ -1,0 +1,111 @@
+// .section-error-box
+.section-error-box {
+    .center-error {
+        margin: 50px 0 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .error-num {
+            position: relative;
+            display: inline-block;
+        }
+        h1 {
+            color: #001f26;
+            font-family: 'GothamRounded'; 
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            z-index: 5;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: url(/assets/error_num_img.svg) 3px 106px no-repeat;
+                width: 100%;
+                height: 100%;
+                background-size: 211px auto;
+            }
+            font {
+                font-size: 210px;
+                position: relative;
+                z-index: 5;
+            }
+        }
+        h2 {
+            color: #001f26;
+            font-family: 'GothamRounded'; 
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 60px;
+            margin-bottom: 40px;
+        }
+        p {
+            color: #001f26;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+        .bottom-btn {
+            padding: 0 0 60px;
+            text-align: center;
+            .btn-green {
+                height: 48px;
+                line-height: 48px;
+                border-radius: 24px;
+                font-size: 16px;
+                padding: 0 48px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-error-box {
+        .center-error {
+            h2 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-error-box {
+        .center-error {
+            .error-num {
+                h1 {
+                    font {
+                        font-size: 147px;
+                    }
+                    &::before {
+                        background: url(/assets/error_num_img.svg) 1px 69px no-repeat;
+                        width: 100%;
+                        height: 100%;
+                        background-size: 162px auto;
+                    }
+                }
+            }
+            h2 {
+                font-size: 32px;
+                line-height: 38px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 18px;
+            }
+            .bottom-btn {
+                .btn-green {
+                    min-width: 327px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

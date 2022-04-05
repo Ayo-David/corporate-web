@@ -1,0 +1,294 @@
+// .section-customer-support-faqs-banner
+.section-customer-support-faqs-banner {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-size: cover !important;
+  background-color: #003D4C;
+  position: relative;
+
+  .background-image {
+    width: 50%;
+    height: 500px;
+    background-size: contain !important;
+    position: absolute;
+    top: 0;
+    &.mask-curve-left {
+      background-color: #C6E0E9;
+      mask: url('/assets/faqs-mask-curve-left.svg') left no-repeat;
+      left: 0;
+    }
+    &.mask-curve-right {
+      background-color: #001F26;
+      mask: url('/assets/faqs-mask-curve-right.svg') right no-repeat;
+      right: 0;
+    }
+  }
+
+  .hero-business-content {
+    position: relative;
+    width: 830px;
+    padding: 106px 0 228px;
+
+    .title {
+      margin-bottom: 58px;
+      color: #FFFFFF;
+      font-family: "GothamRounded";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .box-search-groups {
+      position: relative;
+      &.open {
+        background-color: #fff;
+        border-top: 1px solid #00A792;
+        border-right: 1px solid #00A792;
+        border-left: 1px solid #00A792;
+        border-radius: 4px 4px 0 0;
+
+        .search-box {
+          border: none;
+          border-radius: 0;
+
+          .btn-search {
+            background: url("/assets/search.png") no-repeat;
+            background-size: 38px 38px;
+          }
+        }
+
+        .inputs {
+          input {
+            color: #003D4C;
+          }
+        }
+
+        .search-results {
+          display: block;
+        }
+      }
+    }
+
+    .search-box {
+      height: 86px;
+      border-radius: 4px;
+      border: 1px solid #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      position: relative;
+
+      .btn-search {
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: url("/assets/search-white.svg") no-repeat;
+        background-size: 38px 38px;
+        margin-right: 28px;
+      }
+
+      .inputs {
+        display: flex;
+        flex: 1;
+        height: 48px;
+
+        input {
+          color: #FFFFFF;
+          background-color: transparent;
+          font-family: "GothamRounded";
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 43px;
+          border: none;
+          outline: none;
+          padding: 0;
+        }
+
+        input::-webkit-input-placeholder {
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .search-results {
+      display: none;
+      width: calc(100% + 2px);
+      max-height: 303px;
+      background-color: #fff;
+      border-right: 1px solid #00A792;
+      border-bottom: 1px solid #00A792;
+      border-left: 1px solid #00A792;
+      border-radius: 0 0 4px 4px;
+      box-shadow: 0 16px 24px -11px rgba(0, 107, 146, 0.24);
+      overflow-y: auto;
+      position: absolute;
+      top: 85px;
+      left: -1px;
+      z-index: 100;
+
+      &::before {
+        display: block;
+        content: '';
+        width: calc(100% - 46px);
+        height: 1px;
+        background-color: #003D4C;
+        position: absolute;
+        top: 0;
+        left: 23px;
+      }
+
+      ul {
+        padding: 14px 0 16px;
+
+        li {
+          .value {
+            color: #003D4C;
+            font-family: OpenSans;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: left;
+            cursor: pointer;
+            padding: 11px 23px 11px 86px;
+
+            &.active,
+            &:hover {
+              background-color: #CEF6F0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .section-customer-support-faqs-banner {
+    .background-image {
+      &.mask-curve-left {
+        mask: url('/assets/faqs-mask-curve-left-tablet.svg') left no-repeat;
+      }
+      &.mask-curve-right {
+        mask: url('/assets/faqs-mask-curve-right-tablet.svg') right no-repeat;
+      }
+    }
+
+    .hero-business-content {
+      padding: 143px 32px 203px;
+
+      .title {
+        font-size: 18px;
+        margin-bottom: 47px;
+      }
+
+      .box-search-groups {
+        &.open {
+          .search-box {
+            .btn-search {
+              background-size: 33px 33px;
+            }
+          }
+        }
+      }
+
+      .search-box {
+        height: 86px;
+        padding: 27px 26px;
+
+        .btn-search {
+          width: 33px;
+          height: 33px;
+          background-size: 33px 33px;
+          margin-right: 28px;
+        }
+
+        .inputs {
+          height: 43px;
+
+          input {
+            font-size: 36px;
+            line-height: 43px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-customer-support-faqs-banner {
+    height: 326px;
+    .background-image {
+      height: 155px;
+      &.mask-curve-left {
+        mask: url('/assets/faqs-mask-curve-left-mobile.svg') left no-repeat;
+      }
+      &.mask-curve-right {
+        mask: url('/assets/faqs-mask-curve-right-mobile.svg') right no-repeat;
+      }
+    }
+
+    .hero-business-content {
+      width: 100%;
+      padding: 99px 23px 96px 25px;
+
+      .title {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 30px;
+      }
+
+      .box-search-groups {
+        &.open {
+          .search-box {
+            .btn-search {
+              background-size: 17px 18px;
+            }
+          }
+        }
+
+        .search-box {
+          height: 56px;
+          border-width: 2px;
+          border-radius: 6px;
+          padding: 20px 21px 18px;
+
+          .inputs {
+            height: 26px;
+
+            input {
+              font-size: 18px;
+              line-height: 26px;
+            }
+          }
+
+          .btn-search {
+            width: 17px;
+            height: 18px;
+            background-size: 17px 18px;
+            margin-right: 22px;
+          }
+        }
+
+        .search-results {
+          top: 56px;
+          ul {
+            li {
+              .value {
+                font-size: 14px;
+                line-height: 18px;
+                padding: 8px 16px 8px 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

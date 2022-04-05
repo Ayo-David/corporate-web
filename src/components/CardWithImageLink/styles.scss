@@ -1,0 +1,874 @@
+// .section-bridging-finance-card-with-image-link
+.section-bridging-finance-card-with-image-link {
+  padding-bottom: 144px;
+  .card-img {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 33px;
+    max-width: 1114px;
+    .img-box,
+    .txt-area {
+      flex-basis: 50%;
+      margin-right: 0 !important;
+    }
+  }
+  &.component-index-1 {
+    .content-container {
+      h2 {
+        color: #001F26;
+        font-size: 50px;
+        line-height: 60px;
+        font-family: 'GothamRounded';
+        font-weight: 400;
+        margin-bottom: 45px;
+      }
+    }
+  }
+  &.component-index-2 {
+    .content-container {
+      h2 {
+        margin-bottom: 40px;
+        color: #001f26;
+        font-family: 'GothamRounded';
+        font-size: 50px;
+        font-weight: 300;
+      }
+      ul {
+        li {
+          a {
+            font-weight: 700;
+            color: #001f26;
+          }
+        }
+      }
+    }
+  }
+
+  &.component-index-3 {
+    .card-img {
+      .content-container {
+        p {
+          margin-bottom: 15px;
+          a {
+            position: relative;
+            padding-right: 25px;
+            background: url(/assets/icon-right-more.svg) right 8px
+              no-repeat;
+            background-size: 8px 12px;
+            color: #001f26;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30px;
+            padding-right: 14px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &.right-img {
+        .img-box {
+          .content-container {
+            ul li {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.private-banking {
+    padding-top: 72px;
+    padding-bottom: 64px;
+
+    &.borrowing {
+      &.component-index-0 {
+        padding-top: 0;
+        padding-bottom: 106px;
+        .card-img {
+          .txt-area {
+            .content-container {
+              h1 {
+                margin-bottom: 29px;
+              }
+              p {
+                margin-bottom: 26px;
+                span {
+                  font-family: OpenSans !important;
+                  font-size: 16px !important;
+                  line-height: 28px !important;
+                }
+                &:nth-child(2) {
+                  margin-bottom: 18px;
+                  span {
+                    font-family: OpenSans !important;
+                    font-size: 20px !important;
+                    font-weight: 600 !important;
+                    line-height: 28px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container {
+      padding: 0 162px;
+
+      p {
+        * {
+          color: #001f26;
+          font-family: OpenSans !important;
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+
+      .card-img {
+        display: flex;
+        align-items: stretch;
+        & > * {
+          flex-basis: 50%;
+        }
+  
+        &.left-img {
+          .img-box {
+            &.w550 {
+              left: 0;
+            }
+          }
+        }
+        &.right-img {
+          .img-box {
+            &.w550 {
+              right: 0;
+            }
+          }
+        }
+  
+        .txt-area {
+          display: flex;
+          flex-direction: column;
+  
+          .little-txt {
+            margin-bottom: 33px;
+          }
+  
+          .content-container {
+            max-width: 540px;
+  
+            h1 {
+              max-width: initial;
+              font-weight: 400;
+              line-height: 58px;
+              margin-bottom: 35px;
+            }
+  
+            p {
+              margin-bottom: 0;
+              * {
+                color: #001f26;
+                font-family: OpenSans !important;
+                font-size: 20px;
+                line-height: 28px;
+              }
+            }
+  
+            ul {
+              li {
+                color: #001f26;
+                font-family: OpenSans;
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+  
+        .img-box {
+          &.w550 {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+          }
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .card-img {
+    display: flex;
+    border-radius: 0 !important;
+
+    &.left-img {
+      .img-box {
+        margin-right: 34px;
+      }
+      .content-container {
+        ul {
+          li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+            font-size: 18px;
+            color: #001f26;
+            &::before {
+              content: '';
+              width: 5px;
+              height: 5px;
+              background-color: #001f26;
+              display: inline-block;
+              vertical-align: middle;
+              position: absolute;
+              left: 6px;
+              top: 10px;
+              border-radius: 100%;
+            }
+            a[title='Cash ISA transfers'] {
+              font-weight: bold;
+              color: #001f26;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    &.right-img {
+      .content-container {
+        ul {
+          li {
+            margin-bottom: 15px;
+            a {
+              position: relative;
+              padding-right: 25px;
+              background-size: 8px 12px;
+              color: #001f26;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 30px;
+              padding-right: 14px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .content-container {
+      h1 {
+        font-family: 'GothamRounded';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        color: #001f26;
+        margin-bottom: 40px;
+        max-width: 542px;
+      }
+      p {
+        margin-bottom: 26px;
+        font-size: 20px;
+        line-height: 28px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      h3 {
+        color: #001f26;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 26px;
+      }
+      ul li {
+        font-size: 18px;
+      }
+    }
+
+    .two-links {
+      display: inline-flex;
+      flex-direction: column;
+      .icon-right-more {
+        background: url(/assets/icon-right-more.svg) right center no-repeat;
+        background-size: 8px 12px;
+        color: #001f26;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        padding-right: 14px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .img-box {
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+
+    .txt-area {
+      .little-txt {
+        color: #767676;
+        font-family: 'GothamRounded';
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        line-height: 22px;
+        text-transform: uppercase;
+      }
+      .big-title {
+        color: #001f26;
+        font-family: 'GothamRounded';
+        font-size: 50px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 60px;
+        margin-bottom: 40px;
+        max-width: 380px;
+      }
+      .long-txt {
+        color: #001f26;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 40px;
+      }
+      .list-area {
+        .list-title {
+          color: #001f26;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 28px;
+          margin-bottom: 20px;
+        }
+        .lists {
+          li {
+            margin-bottom: 30px;
+          }
+          .points {
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            background-color: #001f26;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            left: 6px;
+            top: 10px;
+          }
+          .icon-done {
+            position: absolute;
+            left: 4px;
+            top: 5px;
+            background: url(/assets/black-done.svg) center center no-repeat;
+            background-size: 21px 15px;
+            width: 21px;
+            height: 15px;
+          }
+          .txt {
+            position: relative;
+            color: #001f26;
+            font-size: 18px;
+            line-height: 24px;
+            padding-left: 25px;
+            margin-bottom: 0;
+            .bold-txt {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .bottom-btn {
+        padding-top: 40px;
+      }
+    }
+  }
+  &.component-index-0 {
+    .little-txt {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+    .card-img {
+        .content-container {
+          h1 {
+            font-size: 48px;
+            line-height: 60px !important;
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: 540px;
+          }
+          h3 {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 16px;
+          }
+          p {
+            font-size: 20px;
+            line-height: 28px;
+          }
+          ul li {
+            line-height: 26px;
+            margin-bottom: 26px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      .txt-area {
+        .bottom-btn {
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+  &.component-index-0 {
+    .little-txt {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+    .card-img {
+        .content-container {
+          h1 {
+            font-size: 48px;
+            line-height: 60px !important;
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: 540px;
+          }
+          h3 {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 16px;
+          }
+          p {
+            font-size: 20px;
+            line-height: 28px;
+          }
+          ul li {
+            line-height: 26px;
+            margin-bottom: 26px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      .txt-area {
+        .bottom-btn {
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1130px) {
+  .section-bridging-finance-card-with-image-link {
+    &.private-banking {
+      .container {
+        padding: 0 58px;
+
+        .card-img {
+          .bottom-btn {
+            .btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .card-img {
+      &.left-img {
+        .img-box {
+          margin-right: 40px;
+        }
+      }
+
+      .txt-area {
+        .bottom-btn {
+          .btn-green-border {
+            padding: 13px 39px;
+          }
+        }
+      }
+      
+      .content-container {
+        h1 {
+          font-size: 32px;
+          margin-bottom: 16px !important;
+          line-height: 38px !important;
+        }
+        p {
+          margin-bottom: 16px;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+  .section-bridging-finance-card-with-image-link {
+    padding-bottom: 20px;
+    &.component-index-2 {
+      .content-container {
+        h2 {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &.private-banking {
+      padding-bottom: 54px;
+      &.borrowing {
+        &.component-index-0 {
+          padding-top: 0;
+          padding-bottom: 33px;
+          .card-img {
+            .txt-area {
+              .content-container {
+                h1 {
+                  margin-top: 2px;
+                  margin-bottom: 16px;
+                }
+                p {
+                  margin-bottom: 21px;
+                  span {
+                    font-size: 14px !important;
+                    line-height: 21px !important;
+                  }
+                  &:nth-child(2) {
+                    margin-bottom: 16px;
+                    span {
+                      font-size: 14px !important;
+                      line-height: 21px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .container {
+        padding: 0 32px;
+        
+        .card-img {
+          .txt-area {
+            .little-txt {
+              line-height: 14px;
+              margin-bottom: 15px;
+            }
+            .content-container {
+              h1 {
+                line-height: 38px;
+                margin-bottom: 16px;
+              }
+            }
+            .bottom-btn {
+              padding-top: 15px;
+              .btn-green-border {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 19px;
+                width: 100%;
+                min-height: 50px;
+                height: auto;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .card-img {
+      &.left-img {
+        .img-box {
+          margin-right: 24px;
+        }
+        .content-container {
+          ul {
+            li {
+              font-size: 14px;
+              a[title='Cash ISA transfers'] {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .content-container {
+        h1 {
+          font-size: 32px;
+          margin-bottom: 20px;
+          line-height: 34px;
+        }
+        p {
+          margin-bottom: 20px;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+      &.right-img {
+        .img-box {
+          margin-left: 24px;
+        }
+      }
+      .img-box {
+        margin-right: 24px;
+        align-self: flex-start;
+      }
+      .txt-area {
+        .little-txt {
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 10px;
+        }
+        .big-title {
+          color: #001f26;
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 18px;
+          line-height: 38px;
+        }
+        .bottom-btn {
+          padding-top: 0;
+        }
+        .list-area {
+          .lists {
+            li {
+              margin-bottom: 5px;
+            }
+            .points {
+              width: 3px;
+              height: 3px;
+              left: 6px;
+              top: 8px;
+            }
+            .txt {
+              font-size: 14px;
+              padding-left: 18px;
+              line-height: 20px;
+              margin-bottom: 0;
+              .bold-txt {
+                font-weight: 700;
+                padding-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom-btn {
+      margin-top: 16px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-bridging-finance-card-with-image-link {
+    padding-bottom: 10px;
+    .container {
+      padding: 0 24px;
+    }
+    &.component-index-2 {
+      .content-container {
+        h2 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &.private-banking {
+      padding-bottom: 32px;
+      &.borrowing {
+        &.component-index-0 {
+          padding-top: 0;
+          padding-bottom: 30px;
+          .card-img {
+            .txt-area {
+              .content-container {
+                h1 {
+                  margin-bottom: 17px;
+                }
+                p {
+                  margin-bottom: 24px;
+                  span {
+                    font-size: 16px !important;
+                    line-height: 24px !important;
+                  }
+                  &:nth-child(2) {
+                    margin-bottom: 15px;
+                    span {
+                      font-size: 16px !important;
+                      line-height: 22px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .card-img {
+          &.right-img {
+            .img-box {
+              margin-top: 2px;
+              margin-left: 0;
+              margin-bottom: 22px;
+            }
+          }
+          .img-box {
+            margin-left: 0;
+            margin-top: 2px;
+            margin-bottom: 22px;
+            border-radius: 16px;
+          }
+        }
+      }
+      .container {
+        padding: 0 23px;
+        .card-img {
+          &.right-img {
+            padding: 0 !important;
+            flex-direction: column-reverse;
+            .img-box {
+              margin-bottom: 14px;
+            }
+          }
+          &.left-img {
+            padding: 0 !important;
+            .img-box {
+              margin-bottom: 14px;
+            }
+          }
+
+          .txt-area {
+            .little-txt {
+              text-align: left;
+              margin-bottom: 16px;
+            }
+            .content-container {
+              ul {
+                li {
+                  font-size: 16px;
+                  line-height: 24px;
+                  padding-left: 28px;
+                  &::before {
+                    left: 3px;
+                  }
+                }
+              }
+            }
+            .bottom-btn {
+              padding-bottom: 0;
+              .btn-green-border {
+                height: 48px;
+              }
+            }
+          }
+          
+          .img-box {
+            &.w550 {
+              width: 100%;
+              min-width: 0;
+              position: relative !important;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+    .card-img {
+      flex-direction: column;
+      align-items: center;
+      &.left-img {
+        .img-box {
+          margin-right: 0;
+        }
+      }
+      &.right-img {
+        .img-box {
+          margin-left: 0;
+        }
+      }
+      .txt-area {
+        .little-txt {
+          margin-bottom: 24px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      .content-container {
+        h1 {
+          font-size: 32px;
+          font-weight: 300;
+          margin-bottom: 35px;
+          line-height: 40px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .img-box {
+        margin-bottom: 20px;
+        &.w550 {
+          max-width: none;
+          margin: 20px 0;
+          width: 100%;
+        }
+      }
+      .txt-area {
+        .little-txt {
+          text-align: left;
+        }
+        .long-txt {
+          font-size: 16px;
+          margin-bottom: 24px;
+        }
+        .list-area {
+          .list-title {
+            font-size: 16px;
+          }
+          .lists {
+            li {
+              margin-bottom: 20px;
+            }
+            .txt {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .bottom-btn {
+          padding-top: 0;
+          padding-bottom: 30px;
+          display: block;
+          .btn-green-border {
+            font-size: 14px;
+            min-width: 327px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+// .section-private-banking-enquiry-form-modal
+.section-private-banking-enquiry-form-modal {
+    &.modal-default {
+        .modal-main {
+            width: 1115px;
+            height: 704px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .modal-top {
+            border: 0;
+            padding: 40px 40px 10px;
+            .left-txt {
+                padding-top: 20px;
+                font-size: 32px;
+                font-weight: bold;
+                color: #001F26;
+                line-height: 35px;
+            }
+        }
+	    // .modal-inner
+        .modal-inner {
+            padding: 0 40px;
+            position: relative;
+            .form-box {
+                padding: 30px 40px 30px 0;
+            }
+
+            .right-img {
+                padding-right: 40px;
+                display: flex;
+                margin-left: auto;
+                margin-top: -25px;
+                justify-content: flex-end;
+            }
+            .rights {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .right-check {
+                    padding: 50px 10px 0 0;
+                    position: absolute;
+                    bottom: -70px;
+                }
+            }
+        }
+        
+        .bottom-btn {
+            border: 0;
+            padding: 30px 40px 40px;
+            justify-content: flex-start;
+            position: absolute;
+            bottom: 20px;
+            .btn {
+                margin-left: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+    .check-choose {
+        display: flex;
+        padding-top: 6px;
+        .radio-wrap {
+            margin-right: 20px;
+        }
+    }
+    // .inputs
+    .inputs {
+        border-radius: 2px;
+        border: 1px solid #003d4c;
+        height: 50px;
+        width: 470px;
+        position: relative;
+        &.error {
+          border-color: #f00;
+        }
+        input {
+            font-size: 14px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 10px 15px;
+            outline: none;
+            color: #333;
+            &.isPrice {
+                padding-left: 35px;
+            }
+            &::-webkit-input-placeholder {
+                color: #7f9ea5;
+            }
+            &:-moz-placeholder {
+                color: #7f9ea5;
+            }
+            &::-moz-placeholder {
+                color: #7f9ea5;
+            }
+            &:-ms-input-placeholder {
+                color: #7f9ea5;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1130px) {
+    .section-private-banking-enquiry-form-modal {
+        &.modal-default {
+            .modal-main {
+                width: 704px;
+                height: 664px;
+            }
+            .modal-top {
+                padding-left: 10px;
+                .left-txt {
+                    padding-top: 0;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+	        // .modal-inner
+            .modal-inner {
+                padding: 0 10px;
+                .form-box {
+                    padding-right: 0;
+                    .right-check {
+                        width: 400px;
+                    }
+                }
+                .rights {
+                    display: flex;
+                    justify-content: center;
+                }
+                .right-img {
+                    max-width: 286px;
+                    padding-right: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .bottom-btn {
+                bottom: 0;
+                left: 0;
+                padding-left: 30px;
+                padding-bottom: 30px;
+            }
+        }
+        .bold-txt {
+            font-size: 20px;
+            line-height: 24px;
+            padding-right: 0;
+        }
+        .inputs {
+            width: 400px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-private-banking-enquiry-form-modal {
+        &.modal-default {
+            .modal-main {
+                height: 664px;
+            }
+            .modal-top {
+                padding-left: 10px;
+                .left-txt {
+                    padding-top: 0;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+	        // .modal-inner
+            .modal-inner {
+                padding: 0 10px;
+                .form-box {
+                    padding-right: 0;
+                    .right-check {
+                        width: 400px;
+                    }
+                }
+                .rights {
+                    display: flex;
+                    justify-content: center;
+                }
+                .right-img {
+                    max-width: 286px;
+                    padding-right: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .bottom-btn {
+                bottom: 0;
+                left: 0;
+                padding-left: 30px;
+                padding-bottom: 30px;
+            }
+        }
+        .bold-txt {
+            font-size: 20px;
+            line-height: 24px;
+            padding-right: 0;
+        }
+        .inputs {
+            width: 400px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-private-banking-enquiry-form-modal {
+        &.modal-default {
+            .modal-main {
+                padding-left: 0;
+                padding-top: 0;
+            }
+	        // .modal-top
+            .modal-top {
+                padding: 20px 24px;
+                border-bottom: 1px solid #DDE1E6;
+                .left-txt {
+                    max-width: none;
+                    padding-top: 0;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                .btn-close {
+                    margin: 0;
+                    margin-right: -5px;
+                }
+            }
+            .modal-main {
+                height: auto;
+	            // .modal-inner
+                .modal-inner {
+                    padding: 25px 25px;
+                    .form-box {
+                        padding: 0;
+                        .right-check {
+                            width: 325px;
+                        }
+                    }
+                    .right-img {
+                        margin: 140px auto 0;
+                        width: 160px;
+                        padding-right: 0;
+                    }
+                    .rights {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        .right-check {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .bottom-btn {
+                border-top: 1px solid #DDE1E6;
+                padding: 25px;
+                flex-direction: column-reverse;
+                bottom: 20px;
+                bottom: auto;
+                position: relative;
+                .btn {
+                    min-width: 325px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .inputs {
+            width: 325px;
+        }
+    }
+}

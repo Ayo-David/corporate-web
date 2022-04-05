@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="369px" height="501px" viewBox="0 0 369 501" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M368.192501,0.0124214739 L368.192501,500.012421 L3.9319078,500.007168 C43.6562574,317.384713 30.6071375,143.737045 0.000171079769,0.000803422555 L368.192501,0.0124214739 Z" id="path-1"></path>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="111A---Home" transform="translate(-399.000000, -145.000000)">
+            <g id="Group-51" transform="translate(0.000000, 145.987579)">
+                <g id="Group-8" transform="translate(399.807499, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

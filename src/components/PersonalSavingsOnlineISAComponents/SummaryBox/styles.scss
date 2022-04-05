@@ -1,0 +1,287 @@
+// .section-personal-savings-online-isa-summary-box
+.section-personal-savings-online-isa-summary-box {
+    .title-full {
+    	line-height: 138px;
+    	text-align: center;
+		height: 138px;
+		background-color: #de4f94;
+		font-family: "GothamRounded";
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+    }
+    .flex-space {
+    	display: flex;
+    	justify-content: space-between;	
+    }
+    .con-box {
+    	padding: 55px 280px;
+			&:nth-child(even) {
+				background-color: #f9f9f9;
+			}
+			& > * {
+				max-width: 885px;
+				margin: auto;
+			}
+    	.title {
+			color: #003d4c;
+			font-family: "GothamRounded";
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 30px;
+			margin-bottom: 32px;
+			&.mb-32 {
+				margin-bottom: 32px;
+			}
+    	}
+		&.bg-lightgray {
+			.table-box {
+				margin-bottom: 50px;
+			}
+		}
+		div {
+			& > p {
+				margin-bottom: 50px;
+			}
+		}
+		.table-responsive {
+			margin-bottom: 50px;
+			table {
+				color: #001f26;
+				border-collapse: collapse;
+				box-shadow: 0 5px 12px rgba(0, 107, 146, 0.12);
+				border-radius: 10px;
+				overflow: hidden;
+				background-color: #fff;
+				margin: auto;
+				padding: 12px;
+				th,
+				td {
+					color: #001f26;
+					font-family: "GothamRounded";
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 25px;
+					padding: 15px;
+				}
+				thead {
+					border-bottom: 1px solid #B8C4C6;
+					tr {
+						&:nth-child(1) {
+							*:nth-child(3) {
+								background-color: #F9F9F9;
+							}
+						}
+						&:nth-child(2) {
+							*:nth-child(3) {
+								background-color: #F9F9F9;
+							}
+							*:nth-child(4) {
+								background-color: #F9F9F9;
+							}
+						}
+						&:nth-child(1) {
+							*:nth-child(4) {
+								background-color: #EEF0F1;
+							}
+						}
+						&:nth-child(2) {
+							*:nth-child(5) {
+								background-color: #EEF0F1;
+							}
+							*:nth-child(6) {
+								background-color: #EEF0F1;
+							}
+						}
+					}
+					th, td {
+						font-size: 20px;
+						line-height: 26px;
+						font-weight: 500;
+					}
+				}
+				tbody {
+					tr {
+						background-color: white;
+						border-bottom: 1px solid #D6DBDC;
+					}
+				}
+				.font-bold {
+					font-weight: 500;
+				}
+				th {
+					font-weight: 700;
+				}
+			}
+			
+			thead {
+				tr {
+					min-height: 55px;
+				}
+				& > tr {
+					&:first-child {
+						td {
+							background-color: #fff;
+						}
+					}
+					
+				}
+			}
+			tbody {
+				.tr {
+					min-height: 70px;
+				}
+			}
+		}
+    	.table-box {
+			box-shadow: 0 5px 12px rgba(0, 107, 146, 0.12);
+			border-radius: 10px;
+			background-color: #ffffff;
+    	}
+		ul {
+			li {
+				margin-bottom: 15px;
+				position: relative;
+				padding-left: 25px;
+				font-size: 18px;
+				color: #001f26;
+				a {
+					color: #001f26;
+					font-weight: 700;
+					.list-ul li{
+						list-style: none;
+						padding-left: 0;
+						&::before {
+							display: none;
+						}
+					}
+					u {
+						font-weight: 700;
+						color: #001f26;
+						text-decoration: none;
+					}
+				}
+				& > ul {
+					li {
+						padding-left: 0;
+						margin-top: 15px;
+						&::before {
+							display: none;
+						}
+					}
+				}
+				&::before {
+					content: '';
+					width: 4px;
+					height: 4px;
+					background-color: #001f26;
+					display: inline-block;
+					vertical-align: middle;
+					position: absolute;
+					left: 6px;
+					top: 10px;  
+					border-radius: 100%;  
+				}
+			}
+		}
+    	.mobile-table {
+    		display: none;
+    	}
+    	
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1400px) {
+    .section-personal-savings-online-isa-summary-box {
+        .con-box {
+	    	padding: 40px 50px;
+	    }	
+    	
+    }
+}
+@media (max-width: 1023px) {
+    .section-personal-savings-online-isa-summary-box {
+        .title-full {
+	    	line-height: 94px;
+			height: 94px;
+			font-size: 14px;
+	    }
+    	.con-box {
+	    	padding: 40px 32px;
+	    	.title {
+				font-size: 16px;
+				margin-bottom: 20px;
+				&.mb-32 {
+					margin-bottom: 20px;
+				}
+	    	}
+			div > p {
+				margin-bottom: 40px;
+			}
+			ul {
+				li {
+					a {
+						font-weight: 700;
+						color: #001f26;
+					}
+				}
+			}
+	    	.table-box {
+				margin-bottom: 40px;
+	    	}
+			.table-responsive {
+				margin-bottom: 40px;
+				table {
+					margin: 0;
+					td {
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 20px;
+						padding: 15px;
+					}
+				}
+			}
+    	}
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-personal-savings-online-isa-summary-box {
+        .title-full {
+	    	line-height: 60px;
+			height: 60px;
+	    }
+	    .con-box {
+	    	padding: 40px 30px;
+	    	.title {
+				font-size: 18px;
+				margin-bottom: 25px;
+				&.mb-32 {
+					margin-bottom: 20px;
+				}
+	    	}
+			ul {
+				li {
+					font-size: 16px;
+				}
+			}
+	    	.table-box {
+				display: none;
+	    	}
+			.table-responsive {
+				margin-bottom: 40px;
+				table {
+					margin: 0;
+					td {
+						font-size: 12px;
+						line-height: 20px;
+						padding: 10px;
+					}
+				}
+			}
+    	}
+    }
+}

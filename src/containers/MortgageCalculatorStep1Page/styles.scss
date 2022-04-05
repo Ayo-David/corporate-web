@@ -1,0 +1,11 @@
+
+.mortgage-calculator-content {
+  margin-top: 60px;
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .mortgage-calculator-content {
+    margin-top: 20px;
+  }
+}

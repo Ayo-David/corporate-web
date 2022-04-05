@@ -1,0 +1,27 @@
+.paragraph--title_description {
+  margin: 0;
+  .category {
+    color: #767676;
+    font-family: GothamRounded;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .description {
+    h2 {
+      font-size: 50px;
+      margin-bottom: 15px;
+      color: #001f26;
+      font-weight: 400;
+    }
+    p {
+      color: #001f26;
+      font-family: OpenSans;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left;
+    }
+  }
+}

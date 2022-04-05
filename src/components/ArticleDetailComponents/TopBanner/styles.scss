@@ -1,0 +1,24 @@
+// .section-article-details-banner
+.section-article-details-banner {
+    height: 500px;
+    background-size: cover!important;
+    .hero-business-content {
+        position: relative;
+        max-width: 680px;
+        padding: 43px 20px 58px 90px;
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-article-details-banner {
+        height: 697px;
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-article-details-banner {
+        height: 333px;
+    }
+}

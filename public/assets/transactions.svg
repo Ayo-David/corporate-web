@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="25px" viewBox="0 0 34 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.819608 0 0 0 0 0.713725 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.4.1b-—-Business-Premium-Current-Account-" transform="translate(-1046.000000, -1768.000000)">
+            <g id="Group" transform="translate(0.000000, 728.000000)" filter="url(#filter-1)">
+                <g transform="translate(1048.000000, 1040.939862)">
+                    <path d="M22.9676103,-1.22091105 C23.5363966,-1.76995586 24.4313968,-1.81219007 25.0503699,-1.3476137 L25.199014,-1.22091105 L29.5139655,2.94427682 C29.9113247,3.32784445 29.9225049,3.96091071 29.5389373,4.35826989 C29.530761,4.36674018 29.5224358,4.37506543 29.5139655,4.38324173 L25.199014,8.5484296 L25.199014,8.5484296 C24.5828289,9.14322814 23.5837955,9.14322814 22.9676103,8.5484296 C22.3988241,7.9993848 22.3550713,7.13544827 22.836352,6.53795858 L22.9676103,6.39447356 L25.7952693,3.66375927 L22.9676103,0.933044987 C22.3988241,0.384000184 22.3550713,-0.479936347 22.836352,-1.07742603 L22.9676103,-1.22091105 Z" id="Path-5" fill="#003D4C" fill-rule="nonzero" transform="translate(26.169231, 3.663759) rotate(-90.000000) translate(-26.169231, -3.663759) "></path>
+                    <polyline id="Path-29" stroke="#003D4C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="26.1692308 5.35582698 26.1692308 22.0584424 -4.03454014e-07 22.0584424 -4.03454012e-07 5.35582698 15.75 5.35582698"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

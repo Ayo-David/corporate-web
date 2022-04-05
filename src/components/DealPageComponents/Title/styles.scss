@@ -1,0 +1,22 @@
+.section {
+  &.section-title-deal-section {
+    .detail {
+      p {
+        font-size: 24px;
+        font-family: OpenSans;
+        font-weight: 600;
+        color: #001f26;
+        &:last-of-type {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+      h2 {
+        color: #001f26;
+        font-size: 48px;
+        font-family: GothamRounded;
+        font-weight: 500;
+      }
+    }
+  }
+}

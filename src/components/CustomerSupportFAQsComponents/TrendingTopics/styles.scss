@@ -1,0 +1,168 @@
+//.section-trending-topics
+.section-trending-topics {
+	position: relative;
+
+	.container {
+		padding: 0 72px 0 49px;
+	}
+	.content {
+		width: 100%;
+		height: 80px;
+		background-color: #FFFFFF;
+		border-radius: 10px;
+		box-shadow: 0 5px 12px 0 rgba(0, 107, 146, 0.24);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: -40px auto 0;
+		padding: 0 150px 0 61px;
+		.lefts {
+			display: flex;
+			align-items: center;
+			.icon {
+				display: block;
+				margin-right: 26px;
+				&.icon-trending {
+					width: 22px;
+					height: 13px;
+					background: url("/assets/icon-trending.svg") no-repeat;
+					background-size: 22px 13px;
+				}
+			}
+	
+			.title {
+				color: #001F26;
+				font-family: GothamRounded;
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 30px;
+				text-align: left;
+			}
+		}
+		.rights {
+			ul {
+				display: flex;
+				li {
+					margin-right: 60px;
+					&:last-child {
+						margin-right: 0;
+					}
+					.trending-items {
+						color: #001F26;
+						font-family: OpenSans;
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 19px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+	.section-trending-topics {
+		.content {
+			padding: 0 21px;
+			.lefts {
+				.title {
+					font-size: 20px;
+					line-height: 28px;
+				}
+			}
+			.rights {
+				ul {
+					li {
+						margin-right: 30px;
+						.trending-items {
+							font-size: 14px;
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+	.section-trending-topics {
+		.container {
+			padding: 0 31px;
+		}
+		.content {
+			padding: 0 21px;
+			.lefts {
+				.icon {
+					width: 21px;
+					height: 13px;
+					margin-right: 9px;
+				}
+				.title {
+					font-size: 18px;
+				}
+			}
+			.rights {
+				ul {
+					li {
+						margin-right: 18px;
+						.trending-items {
+							font-size: 12px;
+							line-height: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+	.section-trending-topics {
+		.container {
+			padding: 0;
+		}
+		.content {
+			display: block;
+			height: auto;
+			padding: 34px 24px 31px;
+			margin: 0;
+			.lefts {
+				.icon {
+					&.icon-trending {
+						width: 30px;
+						height: 18px;
+						background-size: 30px 18px;
+						margin-right: 20px;
+					}
+				}
+				.title {
+					font-size: 24px;
+					line-height: 28px;
+				}
+			}
+			.rights {
+				margin-top: 24px;
+				ul {
+					display: block;
+					li {
+						margin: 0 0 22px 0;
+						padding-left: 50px;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+
+						.trending-items {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

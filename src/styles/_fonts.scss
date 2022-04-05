@@ -1,0 +1,45 @@
+$base-url: '../../assets/fonts/';
+
+// Open Sans
+@font-face {
+	font-family: 'OpenSans'; 
+	src: url($base-url + 'OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: 'OpenSans'; 
+	src: url($base-url + 'OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+	font-family: 'OpenSans'; 
+	src: url($base-url + 'OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+// Gotham Rounded
+@font-face {
+	font-family: 'GothamRounded'; 
+	src: url($base-url + 'GothamRounded-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+	font-family: 'GothamRounded'; 
+	src: url($base-url + 'GothamRounded-Book.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: 'GothamRounded';
+	src: url($base-url + 'GothamRounded-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+    src: url($base-url + 'GothamRounded-Bold.otf') format('opentype');
+    font-weight: 700;
+}

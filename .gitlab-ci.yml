@@ -1,0 +1,7 @@
+---
+
+include:
+  - project: $CYN_CW_CI_PROJECT
+    ref: $CYN_CW_CI_REF
+    file: $CYN_CW_FRONTEND_ONLINE_CI_FILENAME
+

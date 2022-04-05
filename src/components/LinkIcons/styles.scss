@@ -1,0 +1,110 @@
+// .section-bridging-finance-link-icons
+.section-bridging-finance-link-icons {
+    height: 128px;
+    transform: rotate(-360deg);
+    box-shadow: 0 5px 12px rgba(0, 107, 146, 0.12);
+    background-color: #ffffff;
+    .container {
+        padding: 0 20px;
+        max-width: 1114px;
+        box-sizing: content-box;
+        .items {
+            text-align: center;
+            padding: 35px 0;
+            display: block;
+            .icons {
+                width: 32px;
+                height: 32px;
+                margin-bottom: 12px;
+                &.icon-features {
+                    background: url(/assets/key-features.svg) center center no-repeat;
+                    background-size: 31px 31px;
+                }
+                &.icon-eligibility {
+                    background: url(/assets/icon-eligibility.svg) center center no-repeat;
+                    background-size: 31px 31px;
+                }
+                &.icon-how-to {
+                    background: url(/assets/icon-edit.svg) center center no-repeat;
+                    background-size: 31px 31px;
+                }
+                &.icon-terms {
+                    background: url(/assets/icon-terms.svg) center center no-repeat;
+                    background-size: 31px 31px;
+                }
+                &.icon-faq {
+                    background: url(/assets/help.svg) center center no-repeat;
+                    background-size: 31px 31px;
+                }
+            }
+            .txt {
+                color: #001f26;
+                font-family: "GothamRounded";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-bridging-finance-link-icons {
+        .container {
+            padding: 0 12px;
+            .items {
+                text-align: center;
+                padding: 28px 0;
+                .txt {
+                    color: #001f26;
+                    font-family: "GothamRounded";
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-bridging-finance-link-icons {
+        padding: 10px 0;
+        height: auto;
+        .container {
+            .row {
+                flex-direction: column;
+                .items {
+                    padding: 10px 30px;
+                    display: flex;
+                    align-items: center;
+                    .icons {
+                        margin-right: 10px;
+                        width: 31px;
+                        height: 31px;
+                        margin-bottom: 0;
+                        &.icon-features {
+                            background-size: 26px 26px;
+                        }
+                        &.icon-eligibility {
+                            background-size: 100%;
+                        }
+                        &.icon-how-to {
+                            background-size: 100%;
+                        }
+                        &.icon-terms {
+                            background-size: 100%;
+                        }
+                    }
+                    .txt {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

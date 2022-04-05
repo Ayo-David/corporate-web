@@ -1,0 +1,119 @@
+// .footer-menu
+.footer-menu {
+	background: #001F26;
+	padding: 80px 0;
+	min-height: 454px;
+	.container {
+		display: flex;
+	}
+	.footer-menu-content {
+		padding: 0 30px;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 0px;
+		flex: 1 1 0px;
+		h5 {
+			font-family: GothamRounded;
+			font-size: 18px;
+			font-weight: 500;
+			color: #00A792;
+			margin-bottom: 28px;
+		}
+		li {
+			list-style-type: none;
+			margin-top: 14px;
+			margin-bottom: 14px;
+			a {
+				font-size: 16px;
+				font-weight: 700;
+				color: #fff;
+				text-decoration: none;
+				&:hover {
+					color: #00A792;
+				}   
+			}
+		}
+	}
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+	// .footer-menu
+	.footer-menu {
+		padding: 45px 0 25px;
+		.container {
+			padding: 15px;
+		}
+		.footer-menu-content {
+			padding: 0 15px;
+			h5 {
+				font-size: 12px;
+				margin-bottom: 14px;
+			}
+			li {
+				a {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+	// .footer-menu
+	.footer-menu {
+		.container {
+			flex-direction: column;
+			.footer-menu-content {
+				padding-bottom: 0;
+				
+				&.open {
+					// padding: 0 0 14px;
+					ul {
+						display: block;
+						margin-bottom: 10px;
+					}
+					h5 {
+						margin-bottom: -10px;
+						border-top: 0 solid #000;
+						border-top: 2px solid #00d1b6;
+						.btn-arrow {
+							transform: rotate(-180deg);
+						}
+					}
+				}
+				h5 {
+					padding: 17px 0;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border-top: 2px solid #00d1b6;
+					font-size: 20px;
+					margin-bottom: 0;
+					.btn-arrow {
+						background: url(/assets/mobile-green-arrow@2x.png) center center no-repeat;
+						width: 30px;
+						height: 30px;
+						background-size: 15px 10px;
+						
+					}
+				}
+				&:last-child {
+				    h5 {
+				        border-bottom: 2px solid #00d1b6;
+				    }
+				}
+				ul {
+					display: none;
+				}
+				li  {
+					margin: 0;
+					padding: 14px 0;
+					a {
+						font-size: 16px;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+	}
+}

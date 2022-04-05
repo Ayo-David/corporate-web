@@ -1,0 +1,264 @@
+// .section-our-customer-promises
+.section-our-customer-promises {
+    background-color: #001F26;
+    color: #fff;
+    padding: 100px 0 140px;
+    &.private-banking-our-customer-promises {
+        padding: 72px 0 96px;
+        .container {
+            padding: 0 39.5px;
+        }
+        .three-items {
+            .col {
+                padding: 0 44.5px;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+        .top-icons {
+            margin-bottom: 28px;
+        }
+        .big-txt {
+            margin-bottom: 60px;
+        }
+    }
+    .top-title {
+        color: #ffffff;
+        font-family: "GothamRounded";
+        font-size: 18px;
+        margin-bottom: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+    }
+    .container {
+        max-width: 1178px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        .row {
+            margin: 0 -10px;
+        }
+    }
+    .top-icons {
+        margin-bottom: 24px;
+        padding-left: 25px;
+        .icons {
+            width: 64px;
+            height: 64px;
+        }
+        .icon-one {
+            background: url(/assets/approach-one.svg) left center no-repeat;
+            background-size: 67px 66px;
+        }
+        .icon-two {
+            background: url(/assets/approach-two.svg) left center no-repeat;
+            background-size: 56px 62px;
+        }
+        .icon-three {
+            background: url(/assets/approach-three.svg) left center no-repeat;
+            background-size: 62px 61px;
+        }
+    }
+    .big-txt {
+        color: #fff;
+        font-family: GothamRounded;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 25px;
+        max-width: 312px;
+        overflow: hidden;
+        padding-left: 25px;
+        font-weight: 500;
+    }
+    .txt {
+        color: #fff;
+        font-size: 16px;
+        line-height: 21px;
+        padding-left: 25px;
+    }
+}
+
+
+/* fix layout issue when smaller than 1550px width */
+@media (max-width: 1550px) {
+    .section-our-customer-promises {
+        .container {
+            padding: 0 32px;
+        }
+    }
+}
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+    .section-our-customer-promises {
+        &.private-banking-our-customer-promises {
+            padding: 56px 0;
+
+            .container {
+             padding: 0 32px;
+            }
+
+            .three-items {
+                .row {
+                  margin: 0;
+                    .col {
+                        padding: 0 20px;
+                    }
+                }
+            }
+            .top-icons {
+                margin-bottom: 36px;
+            }
+        }
+    }
+  }
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+    .section-our-customer-promises {
+        padding: 30px 0 66px;
+        &.private-banking-our-customer-promises {
+            padding: 52px 0 57px;
+            margin-bottom: 54px;
+            .container {
+                padding: 0 12px;
+            }
+            .three-items {
+                .row {
+                  margin: 0;
+                    .col {
+                        padding: 0 20px;
+                    }
+                }
+            }
+            .top-title {
+                margin-bottom: 13px;
+            }
+            .top-icons {
+                margin-bottom: 36px;
+                .icons {
+                  width: 40px;
+                  height: 40px;
+                }
+            }
+        }
+        .top-title {
+            font-size: 14px;
+            margin-bottom: 49px;
+        }
+        .top-icons {
+            .icon-one {
+                background-size: 39px 39px;
+            }
+            .icon-two {
+                background-size: 37px 40px;
+            }
+            .icon-three {
+                background-size: 40px 40px;
+            }
+        }
+        .big-txt {
+            font-size: 22px;
+            max-width: 200px;
+            line-height: 28px;
+            margin-bottom: 23px;
+        }
+        .txt {
+            font-size: 14px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-our-customer-promises {
+        padding: 60px 30px 35px;
+        &.private-banking-our-customer-promises {
+            padding: 52px 25px 56px;
+            margin-bottom: 36px;
+            .big-txt {
+                max-width: none;
+                margin-bottom: 16px;
+                height: auto;
+            }
+
+            .txt {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .container {
+                padding: 0;
+                .top-title {
+                    margin-bottom: 20px;
+                }
+                .top-icons {
+                    margin-bottom: 20px;
+                    .icon-one {
+                        width: 54px;
+                        height: 54px;
+                    }
+
+                    .icon-two {
+                        width: 54px;
+                        height: 60px;
+                    }
+
+                    .icon-three {
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+                .three-items {
+                    .row {
+                        margin: 0;
+                        .col {
+                            margin-bottom: 56px;
+                            padding: 0;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .big-txt {
+            max-width: none;
+        }
+        .container {
+            padding: 0;
+            .top-title {
+                margin-bottom: 37px;
+            }
+            .top-icons {
+                padding-left: 0;
+                .icon-one {
+                    background-size: 54px 54px;
+                }
+                .icon-two {
+                    background-size: 54px 60px;
+                }
+                .icon-three {
+                    background-size: 56px 56px;
+                }
+            }
+            .three-items {
+
+                .row {
+                    flex-direction: column;
+                    .col {
+                        margin-bottom: 40px;
+                    }
+                }
+
+            }
+            .big-txt, .txt {
+                padding-left: 0;
+            }
+        }
+    }
+}

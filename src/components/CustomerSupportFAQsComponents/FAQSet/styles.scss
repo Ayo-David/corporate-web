@@ -1,0 +1,250 @@
+//.section-faq-set
+.section-faq-set {
+  .container {
+    padding: 0 48px;
+    margin-bottom: 24px;
+  }
+  .up-txt {
+    margin-bottom: 82px;
+    color: #767676;
+    font-family: GothamRounded;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+  }
+  .list-faqs {
+    display: flex;
+    .items-faq {
+      width: 312px;
+      margin-right: 32px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .title {
+        padding-left: 50px;
+        color: #001F26;
+        font-family: GothamRounded;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        position: relative;
+        .icon {
+          display: block;
+          transform: translate(0, -50%);
+          position: absolute;
+          top: 50%;
+          left: 2px;
+          &.icon-accounts {
+            width: 28px;
+            height: 22px;
+            background: url("/assets/icon-accounts.svg") no-repeat;
+            background-size: 100%;
+          }
+          &.icon-savings {
+            width: 20px;
+            height: 27px;
+            background: url("/assets/icon-lock.svg") no-repeat;
+            background-size: 100%;
+          }
+          &.icon-lending-finance {
+            width: 25px;
+            height: 28px;
+            background: url("/assets/icon-lending-finance.svg") no-repeat;
+            background-size: 100%;
+          }
+          &.icon-security {
+            width: 28px;
+            height: 21px;
+            background: url("/assets/icon-eyes.svg") no-repeat;
+            background-size: 100%;
+          }
+        }
+      }
+      ul {
+        margin-top: 29px;
+        margin-left: 50px;
+        li {
+          margin-bottom: 14px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .items-corporate-faq {
+            color: #001F26;
+            font-family: OpenSans;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19px;
+            width: 262px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .bottom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 47px 0 72px;
+    .btn-green-border {
+      padding: 0 48px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1366px width */
+@media (max-width: 1366px) {
+  .section-faq-set {
+    .container {
+      padding: 0 31px;
+    }
+    .list-faqs {
+      .items-faq {
+        width: 33.33%;
+        margin-right: 45px;
+        .title {
+          width: auto;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        ul {
+          li {
+            .items-corporate-faq {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+  .section-faq-set {
+    .container {
+      padding: 0 31px;
+    }
+
+    .up-txt {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 1px 0 32px;
+    }
+    .list-faqs {
+      .items-faq {
+        margin-right: 45px;
+        &:nth-child(1) {
+          width: 141px;
+        }
+        &:nth-child(2) {
+          width: 118px;
+        }
+        &:nth-child(3) {
+          width: 182px;
+        }
+        &:nth-child(4) {
+          width: 127px;
+        }
+        .title {
+          width: auto;
+          font-size: 16px;
+          line-height: 30px;
+          padding: 0;
+          .icon {
+            margin-bottom: 17px;
+            position: relative;
+            &.icon-accounts {
+              width: 28px;
+              height: 26px;
+              margin-bottom: 19px;
+            }
+          }
+        }
+        ul {
+          margin-top: 12px;
+          margin-left: 0;
+          li {
+            margin-bottom: 0;
+            .items-corporate-faq {
+              width: auto;
+              font-size: 12px;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+    .bottom-btn {
+      padding: 86px 0 55px;
+      .btn {
+        height: 49px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  .section-faq-set {
+    .container {
+      padding: 0 24px;
+    }
+    .up-txt {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 3px 0 21px;
+    }
+
+    .list-faqs {
+      display: block;
+      .items-faq {
+        width: 100%;
+        margin: 0 0 57px 0;
+        &:nth-child(1) {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          width: 100%;
+        }
+        &:nth-child(3) {
+          width: 100%;
+        }
+        &:nth-child(4) {
+          width: 100%;
+        }
+        &:last-child {
+          margin: 0;
+        }
+        .title {
+          width: 100%;
+          font-size: 24px;
+          line-height: 30px;
+          padding-left: 54px;
+          .icon {
+            position: absolute;
+          }
+        }
+        ul {
+          margin: 14px 0 0 54px;
+          li {
+            margin-bottom: 11px;
+            .items-corporate-faq {
+              width: 100%;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .bottom-btn {
+      padding: 24px 0 56px;
+      .btn-green-border {
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}

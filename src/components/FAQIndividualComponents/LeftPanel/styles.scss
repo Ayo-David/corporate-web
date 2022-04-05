@@ -1,0 +1,82 @@
+// .section-faq-individual-left-panel
+.section-faq-individual-left-panel {
+	width: 100%;
+	padding: 30px 147px 70px 162px;
+    .panel {
+    	border-bottom: solid 1px #eef0f1;
+    	padding-bottom: 1px;
+    	margin-bottom: 25px;
+    	.title {
+	    	font-family: "GothamRounded";
+			color: #003d4c;
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 28px;
+			margin-bottom: 32px;
+    	}
+    	.txt-p {
+    		margin-bottom: 32px;
+			color: #001f26;
+			font-size: 16px;
+			line-height: 26px;
+    	}
+    	.pic {
+			width: 111px;
+			height: 109px;
+			margin-bottom: 30px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+    	}
+    }
+}
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1079px) {
+    .section-faq-individual-left-panel {
+			padding: 30px 30px 60px;
+    }
+}
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-faq-individual-left-panel {
+			padding: 30px 30px 60px;
+	    .panel {
+	    	&:last-child {
+	    		border-bottom: none;
+	    	}
+	    	.title {
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 30px;
+	    	}
+	    	.txt-p {
+				font-size: 14px;
+	    	}
+	    	.pic {
+				width: 152px;
+				height: 150px;
+				margin-bottom: 0;
+	    	}
+	    }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-faq-individual-left-panel {
+			padding: 20px 15px 60px;
+	    .panel {
+	    	.title {
+				line-height: 40px;
+	    	}
+	    	.txt-p {
+				font-size: 16px;
+	    	}
+	    	.pic {
+				width: 111px;
+				height: 109px;
+	    	}
+	    }
+    }
+}

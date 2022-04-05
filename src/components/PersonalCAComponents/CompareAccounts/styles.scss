@@ -1,0 +1,260 @@
+// compare-accounts
+.compare-personal-accounts{
+  background-color: #fff;
+  padding-top: 60px;
+
+  .gray-title {
+    color: #767676;
+    font-family: GothamRounded;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    &.center {
+      text-align: center;
+    }
+  }
+  .title {
+    font-weight: 400;
+    font-family: GothamRounded;
+    font-size: 48px;
+    line-height: 60px;
+    color: #001F26;
+    text-align: center;
+    margin: 24px 0 56px 0;
+  }
+  .card-row{
+    max-width: 1128px;
+    width: 100%;
+
+    .account-type {
+      box-shadow: 0 10px 16px rgba(184, 196, 198, 0.82);
+      border-radius: 20px;
+      margin-bottom: 100px;
+
+      .header{
+        min-height: 126px;
+        background-color: #CEF6F0;
+        border-radius: 20px 20px 0 0;
+        padding: 23px 32px 32px 32px;
+        color: #001F26;
+
+        .header-title {
+          font-size: 32px;
+          line-height: 38px;
+          font-family: GothamRounded;
+          font-weight: 500;
+          margin-bottom: 16px;
+        }
+        .header-sub-title {
+          font-size: 18px;
+          line-height: 18px;
+          font-family: GothamRounded;
+          font-weight: 500;
+        }
+      }
+      .content{
+        padding: 32px 0;
+        & > * {
+          margin-left: 32px;
+        }
+        .gray-title, h5 {
+          line-height: 22px;
+          color: #767676;
+          margin: 0 32px 8px 32px;
+        }
+        .value, p {
+          color: #001F26;
+          font-family: OpenSans;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 26px;
+          margin: 0 32px 24px 32px;
+          text-transform: capitalize;
+
+          &.included {
+            color: #1B806D;
+          }
+        }
+
+        .add-ons{
+          border-top: 1px solid #EEF0F1;
+          margin-top: 32px;
+          margin-left: 0;
+          margin-right: 0;
+          padding-top: 24px;
+
+          .add-ons-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 30px;
+            margin: 0 32px 30px 32px;
+          }
+          .add-ons-value {
+            h5 {
+              font-weight: 600;
+            }
+          }
+        }
+
+        .btn {
+          width: 248px;
+          height: 48px;
+          border-radius: 24px;
+          line-height: 44px;
+          font-size: 16px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    div:last-child {
+      .account-type {
+        .header{
+          background-image: linear-gradient(to right, #003E4E, #11D3C4);
+          .header-title {
+            color: #fff;
+          }
+        }
+        .header-sub-title {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1270px width */
+@media (max-width: 1270px) {
+  // compare-accounts
+  .compare-personal-accounts{
+    padding-top: 40px;
+
+    .gray-title {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    .title {
+      font-size: 30px;
+      line-height: 30px;
+      margin: 15px 0 55px;
+    }
+    .card-row{
+      max-width: 1128px;
+      width: calc(100% + 30px);
+
+      .account-type {
+        border-radius: 13px;
+        margin-bottom: 60px;
+
+        .header{
+          min-height: 80px;
+          border-radius: 13px 13px 0 0;
+          padding: 15px 35px;
+
+          .header-title {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 14px;
+          }
+          .header-sub-title {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+        .content{
+          .gray-title, h5 {
+            font-size: 12px;
+            line-height: 12px;
+            margin-bottom: 12px;
+          }
+          .value, p {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 10px;
+
+            &.included {
+              color: #1B806D;
+            }
+          }
+
+          .add-ons{
+            margin-top: 16px;
+            padding-top: 13px;
+
+            .add-ons-title {
+              font-size: 16px;
+              line-height: 16px;
+              margin-bottom: 22px;
+            }
+          }
+
+          .btn {
+            width: 100%;
+            height: 48px;
+            font-size: 14px;
+            margin: 8px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+  // compare-accounts
+  .compare-personal-accounts{
+    padding-top: 60px;
+
+    .gray-title {
+      font-size: 14px;
+      line-height: 15px;
+    }
+    .title {
+      font-size: 25px;
+      line-height: 26px;
+      margin: 35px 0 83px;
+    }
+    .card-row{
+      padding: 0 15px;
+      .account-type {
+        margin-bottom: 16px;
+        .header{
+          min-height: 93px;
+          padding: 13px 20px 13px 20px;
+
+          .header-title {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 13px;
+          }
+          .header-sub-title {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+        .content{
+          .add-ons{
+            margin-top: 16px;
+            padding-top: 13px;
+
+            .add-ons-title {
+              font-size: 16px;
+              line-height: 16px;
+              margin-bottom: 22px;
+            }
+          }
+
+          .btn {
+            width: 100%;
+            height: 48px;
+            font-size: 14px;
+            margin: 8px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

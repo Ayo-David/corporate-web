@@ -1,0 +1,101 @@
+// .section-article-details-left-panel
+.section-article-details-left-panel {
+    flex: 0 0 506px;
+    max-width: 506px;
+    flex-grow: 1;
+    .top-date {
+        border-bottom: 1px solid #D6DBDC;
+        padding-bottom: 21px;
+        color: #767676;
+        font-family: "GothamRounded";
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 22px;
+    }
+    .share-list {
+        .title {
+            color: #001f26;
+            font-family: "GothamRounded";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            margin: 32px 0 25px 0;
+            text-transform: uppercase;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 29px;
+        }
+        li {
+            .icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+    .section-article-details-left-panel {
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 56px;
+        .top-date {
+            border-color: #767676;
+            padding-bottom: 16px;
+        }
+        .share-list {
+            .title {
+                margin: 16px 0;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                .icons {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+    .section-article-details-left-panel {
+        flex: 0 0 auto;
+        max-width: none;
+        .share-list {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                .icons {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.icon-in {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    &.icon-twitter {
+                        width: 39px;
+                        height: 32px;
+                    }
+                    &.icon-camera {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}

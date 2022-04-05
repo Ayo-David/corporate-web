@@ -1,0 +1,112 @@
+.section {
+  &.section-our-regional-offices {
+    .container {
+      background: #f9f9f9;
+      padding-top: 65px;
+      padding-bottom: 48px;
+      margin-bottom: 30px;
+    }
+    position: relative;
+    .up-txt {
+      margin-bottom: 48px;
+      color: #767676;
+      font-family: GothamRounded;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .content {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      .office {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+      .title {
+        color: #001f26;
+        font-family: GothamRounded;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        margin-bottom: 19px;
+      }
+      .address {
+        margin-bottom: 20px;
+        * {
+          color: #001f26;
+          font-family: OpenSans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left;
+        }
+      }
+      .opening-hours {
+        margin-bottom: 20px;
+        p {
+          &:nth-of-type(1) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .btn-green-border {
+        margin-top: auto;
+        border: 1px solid #00a792;
+        width: 70%;
+        height: 48px;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #00a792;
+        font-family: OpenSans;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .section-our-regional-offices {
+    .container {
+      .up-txt {
+        font-size: 14px;
+      }
+      .content {
+        flex-wrap: wrap;
+        .office {
+          flex-basis: 33%;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .section-our-regional-offices {
+    .container {
+      padding: 0 30px;
+      .up-txt {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 30px;
+      }
+      .content {
+        flex-wrap: wrap;
+        .office {
+          flex-basis: 100%;
+          margin-bottom: 30px;
+        }
+        .btn-green-border {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

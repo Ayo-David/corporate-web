@@ -1,0 +1,126 @@
+// .section-private-banking-become-a-client
+.section-private-banking-become-a-client {
+    background-color: #F9F9F9;
+    .top-title {
+        color: #001F26;
+        font-family: GothamRounded;
+        font-size: 32px;
+        line-height: 38px;
+        padding: 72px 0 48px;
+        font-weight: 500;
+        text-align: center;
+    }
+    // .three-grid
+    .three-grid {
+        padding: 0 155px 0 156px;
+        .white-box {
+            padding: 30px;
+            min-height: 160px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            height: 100%;
+            box-shadow: 0 5px 12px 0 rgba(0, 107, 146, 0.12);
+            .left-num {
+                color: #00D1B6;
+                font-family: GothamRounded;
+                font-size: 75px;
+                line-height: 90px;
+                max-width: 50px;
+                flex: 0 0 50px;
+                margin-right: 15px;
+            }
+            .txt-area {
+                color: #001F26;
+                font-family: GothamRounded;
+                font-size: 18px;
+                line-height: 24px;
+                strong {
+                    font-weight: 700;
+                    font-family: GothamRounded;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .bottom-btn {
+        text-align: center;
+        padding: 48px 0 72px;
+        .btn {
+            height: 48px;
+            line-height: 46px;
+            font-size: 16px;
+            border-radius: 24px;
+            min-width: 225px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1130px width */
+@media (max-width: 1130px) {
+    .section-private-banking-become-a-client {
+        .three-grid {
+            padding: 0;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: 1023px) {
+    .section-private-banking-become-a-client {
+        .top-title {
+            font-size: 24px;
+            line-height: 38px;
+            padding: 40px 20px 30px;
+        }
+	    // .three-grid
+        .three-grid {
+            padding: 0;
+            .white-box {
+                .left-num {
+                    font-size: 52px;
+                    line-height: 62px;
+                    margin-right: 5px;
+                    font-weight: 600;
+                }
+                .txt-area {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-private-banking-become-a-client {
+        .top-title {
+            line-height: 28px;
+            padding: 56px 24px 24px;
+        }
+	    // .three-grid
+        .three-grid {
+            padding: 0 10px;
+            .col {
+                margin-bottom: 25px;
+            }
+            .white-box {
+                padding: 20px 40px;
+                min-height: 112px;
+                height: auto;
+                .left-num {
+                    flex: 0 0 47px;
+                    max-width: 47px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .bottom-btn {
+            padding: 10px 0 30px;
+            .btn {
+                min-width: 322px;
+            }
+        }
+    }
+}

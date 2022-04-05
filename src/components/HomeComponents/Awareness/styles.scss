@@ -1,0 +1,317 @@
+// .section-home-awareness
+.section-home-awareness {
+    padding-top: 20px;
+    padding-bottom: 72px;
+    .container {
+        padding: 0;
+        margin: 0 auto 20px;
+        .row {
+            margin: 0 -10px;
+            .col {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    // .card-three
+    .card-three {
+        padding-top: 40px;
+        padding-bottom: 0;
+        .flex-spacing {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .gray-panel {
+            min-height: 220px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            padding: 25px;
+            overflow: hidden;
+            display: flex;
+            &:first-child {
+                margin-bottom: 25px;
+            }
+            .left-img {
+                width: 170px;
+                height: 170px;
+                flex: 0 0 170px;
+                max-width: 170px;
+                margin-right: 50px;
+                overflow: hidden;
+                border-radius: 20px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .right-txt {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .top-title {
+                    color: #001f26;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    margin-bottom: 25px;
+                    text-align: left;
+                    text-transform: none;
+                    font-family: GothamRounded;
+                }
+                .txt {
+                    color: #001f26;
+                    font-size: 16px;
+                    line-height: 21px;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    word-break: break-word;
+                }
+                .bottom-more {
+                    padding-top: 10px;
+                    .blue-link {
+                        color: #17434F;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 22px;
+                    }
+                    .icon-circle-arrow-right-dark {
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM14.8477 28.6359C14.3173 27.9994 14.4033 27.0536 15.0397 26.5232L22.6555 20.1756L15.0397 13.8279L14.9027 13.6985C14.3937 13.1539 14.3581 12.3028 14.8477 11.7153C15.378 11.0789 16.3239 10.9929 16.9603 11.5232L25.9603 19.0232L26.0946 19.1496C26.6767 19.7681 26.632 20.7682 25.9603 21.3279L16.9603 28.8279L16.8083 28.9394C16.1808 29.3418 15.3372 29.2233 14.8477 28.6359Z' fill='%23001F26'/%3E%3C/svg%3E");
+                        width: 30px;
+                        height: 30px;
+                        background-size: 30px 30px;
+                    }
+                }
+            }
+        }
+        .border-box {
+            border: 1px solid #B8C4C6;
+            border-radius: 10px;
+            padding: 15px;
+            height: 100%;
+            .top-bar {
+                .lefts {
+                    .logo-box {
+                        width: 46px;
+                        height: 46px;
+                        flex: 0 0 46px;
+                        max-width: 46px;
+                        margin-right: 10px;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .right-txt {
+                        font-size: 14px;
+                        line-height: 19px;
+                        .bold-title {
+                            color: #001F26;
+                            font-weight: 700;
+                            .icon-done {
+                                background: url(/assets/done.png) no-repeat;
+                                width: 16px;
+                                height: 16px;
+                                background-size: 14px 15px;
+                                margin-left: 2px;
+                            }
+                        }
+                        .gray-txt {
+                            color: #7F9EA5;
+                        }
+                    }
+                }
+                .icon-twitter {
+                    background: url(/assets/twitter.png) no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    background-size: 23px 18px;
+                }
+            }
+            .long-txt {
+                padding: 8px 0 20px 0;
+                font-size: 18px;
+                line-height: 23px;
+                font-weight: 600;
+                .blue-link {
+                    color: #1CA2F1;
+                    display: inline-block;
+                }
+                .black {
+                    color: #001F26;
+                    display: inline-block;
+                }
+            }
+            .podcast-img {
+                padding-bottom: 10px;
+                img {
+                    width: 100%;
+                    height: 210px;
+                }
+            }
+            .date-info {
+                border-bottom: 1px solid #B8C4C6;
+                margin-bottom: 8px;
+                padding-bottom: 8px;
+                .left-date {
+                    font-size: 14px;
+                    color: #5b6f83;
+                }
+                .btn-info {
+                    background: url(/assets/icon-info@2x.jpg) no-repeat;
+                    width: 18px;
+                    height: 18px;
+                    background-size: 18px 18px;
+                }
+            }
+            .link-list {
+                .icon-txt {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                .icon-like {
+                    background: url(/assets/icon-heart@2x.jpg) center center no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    background-size: 17px auto;
+                }
+                .icon-talk {
+                    background: url(/assets/icon-talk@2x.jpg) center center no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    background-size: 17px auto;
+                }
+                .icon-link {
+                    background: url(/assets/icon-link@2x.jpg) center center no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    background-size: 17px auto;
+                }
+                .txt {
+                    font-size: 14px;
+                    color: #5b6f83;
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 1550px width */
+@media (max-width: 1550px) {
+	.section-home-awareness {
+        .container {
+            padding: 0 32px;
+        }
+    }
+}
+
+
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+	.section-home-awareness {
+    }
+}
+
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+	.section-home-awareness {
+        .card-three {
+            padding-top: 0;
+            .row {
+                flex-direction: column;
+            }
+            .gray-panel {
+                flex: 0 0 48.5%;
+                max-width: 48.5%;
+                flex-direction: column;
+                &:first-child {
+                    margin-bottom: 0;
+                }
+                .left-img {
+                    margin-right: initial;
+                    width: auto;
+                    flex: initial;
+                    max-width: initial;
+                }
+                .right-txt {
+                    .bottom-more {
+                        padding-top: 20px;
+                    }
+                    .txt {
+                        overflow: hidden; 
+                        text-overflow: ellipsis;
+                        display: -webkit-box; 
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        min-height: 63px;
+                    }
+                }
+            }
+            .left-img {
+                margin-bottom: 20px;
+            }
+            .flex-spacing {
+                display: flex;
+                flex-direction: row;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .border-col {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-home-awareness {
+        padding-bottom: 20px;
+        padding-top: 0;
+        .container {
+            padding: 0 15px;
+            .row {
+                .col {
+                    flex-direction: column;
+                }
+            }
+        }
+        .card-three {
+            .gray-panel {
+                flex: 0 0 100%;
+                max-width: 100%;
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+                .left-img {
+                    flex: 0 0 166px;
+                    max-width: 100%;
+                    height: 170px;
+                    width: 300px;
+                }
+            }
+            .border-box {
+                .podcast-img {
+                    img {
+                        height: 130px;
+                    }
+                }
+            }
+            .border-col {
+                margin-top: 20px;
+            }
+        }
+    }
+}

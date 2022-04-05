@@ -1,0 +1,46 @@
+// .section-faq-individual-banner
+.section-faq-individual-banner {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    background-size: cover!important;
+    background: url(/assets/faq-individual-banner.svg) center center no-repeat;
+    .hero-business-content {
+        position: relative;
+        max-width: 680px;
+        padding: 43px 20px 58px 72px;
+        .white-big-txt {
+            font-family: "GothamRounded";
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 58px;
+            color: #ffffff;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1200px width */
+@media (max-width: 1200px) {
+    .section-faq-individual-banner {
+        .hero-business-content {
+            padding: 74px 30px 64px 0;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-faq-individual-banner {
+        min-height: 140px;
+        .hero-business-content {
+            padding: 20px 15px 20px;
+        }
+        .hero-business-content {
+            .white-big-txt {
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: 300;
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+// .section-mobile-banking
+.section-mobile-banking {
+    padding-top: 72px;
+    padding-bottom: 20px;
+    .container {
+        padding: 0;
+        margin: 0 auto 20px;
+    }
+
+    // .mobile-banking
+    .mobile-banking {
+        justify-content: center;
+        .lefts {
+            max-width: 540px;
+            margin-right: 60px;
+        }
+        .rights {
+            max-width: 540px;
+        }
+        .gray-title {
+            color: #767676;
+            font-weight: 500;
+            font-family: GothamRounded;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+        .big-txt {
+            color: #001f26;
+            font-size: 50px;
+            font-weight: 300;
+            line-height: 60px;
+            margin-bottom: 45px;
+        }
+        .txt {
+            color: #001f26;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 41px;
+        }
+        .two-black {
+            .logo-items {
+                margin-right: 20px;
+            }
+        }
+        .video-box {
+            width: 550px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            .video-img {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .btn-play {
+                background: url(/assets/icon-play.svg) no-repeat;
+                width: 60px;
+                height: 60px;
+                background-size: 60px 60px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -30px;
+                margin-left: -30px;
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 1550px width */
+@media (max-width: 1550px) {
+	.section-mobile-banking {
+        .container {
+            padding: 0 32px;
+        }
+    }
+}
+
+
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1279px) {
+	.section-mobile-banking {
+        .mobile-banking {
+            .video-box {
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 1279px width */
+@media (max-width: 1023px) {
+	.section-mobile-banking {
+        .mobile-banking {
+            .lefts {
+                margin-right: 24px;
+            }
+            .gray-title {
+                font-size: 14px;
+                line-height: 17px;
+            }
+            .big-txt {
+                max-width: 360px;
+                font-size: 30px;
+                line-height: 38px;
+                margin-bottom: 24px;
+            }
+            .txt {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+            .video-box {
+                width: 273px;
+                .video-img {
+                    width: 273px;
+                    height: 250px;
+                    margin-right: auto;
+                    img {
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: 767px) {
+    .section-mobile-banking {
+        padding-bottom: 20px;
+        padding-top: 0;
+        .container {
+            padding: 0 15px;
+        }
+        .mobile-banking {
+            flex-direction: column-reverse;
+            .lefts {
+                margin-left: 10px;
+                margin-right: 0;
+            }
+            .video-box {
+                width: 345px;
+                height: 220px;
+                margin: 0 auto 30px;
+                .video-img {
+                    width: 100%;
+                    border-radius: 25px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .two-black {
+                .logo-items {
+                    img {
+                        width: 156px;
+                    }
+                }
+            }
+        }
+    }
+}
